@@ -65,3 +65,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 Themes are style and website templates. However, it is still possible to override these styles and templates if you want to. Furthermore, it is possible to create your own themes. The content of the pages is written with Markdown files, however, for specific situations, HTML can be used.
 
 *Hugo also has plenty of themes ready to go right away, but a prebuilt theme probably isn’t going to match your brand’s vision. Most likely, you’re going to want a custom theme, something that affords you fine-grained control over things like color schemes, typography, and UI components.* *[opinion on draft.dev](https://draft.dev/learn/creating-hugo-themes)*
+
+## Website design
+
+[Figma](https://www.figma.com/file/JKRMEvhYzAikMkYPC2NtUK/Ulynks?type=design&t=NiP5aiQcdemmpAxl-6)
