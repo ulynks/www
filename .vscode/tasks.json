@@ -9,5 +9,14 @@
     "revealProblems": "onProblem",
   },
   "problemMatcher": [],
-  "tasks": []
+  "tasks": [
+    {
+      "label": "launch",
+      "command": "hugo server",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server."
+    },
+  ]
 }

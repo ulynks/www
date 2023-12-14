@@ -1,9 +1,6 @@
-
 # Institutional Website in Hugo
 
 ![Hugo](image-1.png)
-
-<br>
 
 ## What is [Hugo](https://gohugo.io/)? 🤔
 
@@ -12,8 +9,6 @@ Hugo is an open-source static site generator. [Static sites](https://davidwalsh.
 It is written in Go. [Go](https://go.dev/) is an open-source programming language focused on simplicity, reliability, and efficiency. Go was originally designed at Google in 2007. At the time, Google was growing quickly, and code being used to manage their infrastructure was also growing quickly in both size and complexity. Some Google cloud engineers began to feel that this large and complex codebase was slowing them down. So they decided that they needed a new programming language focused on simplicity and quick performance. Go became an open-source project and was released publicly in 2012. It quickly gained a surprising level of popularity and has become one of the leading modern programming languages.
 
 Hugo is for people building a blog, a company site, a portfolio site, documentation, a single landing page, or a website with thousands of pages.
-
-<br>
 
 ## Why Hugo? 🥇
 
@@ -30,8 +25,6 @@ Hugo is for people building a blog, a company site, a portfolio site, documentat
 - Metalsmith - best customisable
 - Nuxtjs - easier for vue developers
 
-<br>
-
 ### Hugo vs Jekyll
 
 Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
@@ -40,15 +33,9 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
   
-<br>
-
-![Image](image.png) 
-
-<br>
+![Image](image.png)
 
 *Image from 2021*
-
-<br>
 
 ## How to start a Hugo website? 👩‍💻
 
@@ -58,15 +45,32 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - [Community](https://discourse.gohugo.io/)
 - [GitHub](https://github.com/gohugoio/hugo)
 
-<br>
+### Installation Guide 💻
+
+```bash
+brew install hugo
+````
+
+see: <https://gohugo.io/installation/macos/#homebrew>
+
+```bash
+hugo new site quickstart
+cd quickstart
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+echo "theme = 'ananke'" >> hugo.toml
+hugo server
+```
+
+see: <https://gohugo.io/getting-started/quick-start/#explanation-of-commands>
+
+![ulynks](https://github.com/ulynks/www/assets/8126807/f39c1280-6258-4185-bfd3-971933519ba3)
 
 ## What are [Themes](https://themes.gohugo.io/)? 🗂️
 
 Themes are style and website templates. However, it is still possible to override these styles and templates if you want to. Furthermore, it is possible to create your own themes. The content of the pages is written with Markdown files, however, for specific situations, HTML can be used.
 
 *Hugo also has plenty of themes ready to go right away, but a prebuilt theme probably isn’t going to match your brand’s vision. Most likely, you’re going to want a custom theme, something that affords you fine-grained control over things like color schemes, typography, and UI components.* *[opinion on draft.dev](https://draft.dev/learn/creating-hugo-themes)*
-
-<br>
 
 ## Website design 🎨
 
