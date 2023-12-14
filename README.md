@@ -66,6 +66,8 @@ Themes are style and website templates. However, it is still possible to overrid
 
 *Hugo also has plenty of themes ready to go right away, but a prebuilt theme probably isn’t going to match your brand’s vision. Most likely, you’re going to want a custom theme, something that affords you fine-grained control over things like color schemes, typography, and UI components.* *[opinion on draft.dev](https://draft.dev/learn/creating-hugo-themes)*
 
+<br>
+
 ## Website design
 
-[Figma](https://www.figma.com/file/JKRMEvhYzAikMkYPC2NtUK/Ulynks?type=design&t=NiP5aiQcdemmpAxl-6)
+The website design and style guide is being developed in [Figma](https://www.figma.com/file/JKRMEvhYzAikMkYPC2NtUK/Ulynks?type=design&t=NiP5aiQcdemmpAxl-6)
