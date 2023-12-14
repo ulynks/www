@@ -3,6 +3,8 @@
 
 ![Hugo](image-1.png)
 
+<br>
+
 ## What is [Hugo](https://gohugo.io/)? 🤔
 
 Hugo is an open-source static site generator. [Static sites](https://davidwalsh.name/introduction-static-site-generators) take the content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered to the users.
@@ -10,6 +12,8 @@ Hugo is an open-source static site generator. [Static sites](https://davidwalsh.
 It is written in Go. [Go](https://go.dev/) is an open-source programming language focused on simplicity, reliability, and efficiency. Go was originally designed at Google in 2007. At the time, Google was growing quickly, and code being used to manage their infrastructure was also growing quickly in both size and complexity. Some Google cloud engineers began to feel that this large and complex codebase was slowing them down. So they decided that they needed a new programming language focused on simplicity and quick performance. Go became an open-source project and was released publicly in 2012. It quickly gained a surprising level of popularity and has become one of the leading modern programming languages.
 
 Hugo is for people building a blog, a company site, a portfolio site, documentation, a single landing page, or a website with thousands of pages.
+
+<br>
 
 ## Why Hugo? 🥇
 
@@ -26,6 +30,7 @@ Hugo is for people building a blog, a company site, a portfolio site, documentat
 - Metalsmith - best customisable
 - Nuxtjs - easier for vue developers
 
+<br>
 ### Hugo vs Jekyll
 
 Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
@@ -33,12 +38,16 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Search: for “Hugo to Jekyll” in Google, results are all about people switching from Jekyll to Hugo. Hugo even has instructions for a smooth migration from Jekyll to Hugo.
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
+  
+<br>
 
-![Image](image.png)
+![Image](image.png) 
 
 <br>
 
 *Image from 2021*
+
+<br>
 
 ## How to start a Hugo website? 👩‍💻
 
@@ -47,6 +56,8 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - [Documentation](https://gohugo.io/documentation/)
 - [Community](https://discourse.gohugo.io/)
 - [GitHub](https://github.com/gohugoio/hugo)
+
+<br>
 
 ## What are [Themes](https://themes.gohugo.io/)? 🎨
 
