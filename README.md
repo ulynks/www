@@ -60,7 +60,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 
 <br>
 
-## What are [Themes](https://themes.gohugo.io/)? 🎨
+## What are [Themes](https://themes.gohugo.io/)? 🗂️
 
 Themes are style and website templates. However, it is still possible to override these styles and templates if you want to. Furthermore, it is possible to create your own themes. The content of the pages is written with Markdown files, however, for specific situations, HTML can be used.
 
@@ -68,6 +68,6 @@ Themes are style and website templates. However, it is still possible to overrid
 
 <br>
 
-## Website design
+## Website design 🎨
 
 The website design and style guide is being developed in [Figma](https://www.figma.com/file/JKRMEvhYzAikMkYPC2NtUK/Ulynks?type=design&t=NiP5aiQcdemmpAxl-6)
