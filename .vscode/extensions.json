@@ -6,6 +6,7 @@
     "foxundermoon.shell-format",
     "timonwong.shellcheck",
     "xabikos.javascriptsnippets",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "budparr.language-hugo-vscode"
   ]
 }
