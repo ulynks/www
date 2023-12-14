@@ -12,7 +12,7 @@
   "tasks": [
     {
       "label": "launch",
-      "command": "hugo server",
+      "command": "hugo server --buildDrafts",
       "runOptions": {
         "runOn": "folderOpen"
       },

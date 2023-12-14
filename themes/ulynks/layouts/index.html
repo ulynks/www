@@ -1,17 +1,18 @@
 {{ define "main" }}
-    <head>
-    <!-- Other head elements -->
-  
-    <!-- Link to Poppins font from Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
-  </head>
-  <div class="content-container">
-    <div class="text" style="font-family: 'Poppins', sans-serif;">
-      {{ .Content }}
-      <a href="/contactus" class="btn">Call for action</a>
-    </div>
-    <div class="image">
-      <img src="/image.svg" alt="Image">
-    </div>
+
+<head>
+  <!-- Other head elements -->
+
+  <!-- Link to Poppins font from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+</head>
+<div class="content-container">
+  <div class="text" style="font-family: 'Poppins', sans-serif;">
+    {{ .Content }}
+    <a href="/contact-us" class="btn">Contact Us</a>
   </div>
+  <div class="image">
+    <img src="/img/image.svg" alt="Image">
+  </div>
+</div>
 {{ end }}
