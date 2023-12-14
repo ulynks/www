@@ -1,7 +1,9 @@
 
-# Institutional Website in [Hugo](https://gohugo.io/)
+# Institutional Website in Hugo
 
-## What is [Hugo](https://gohugo.io/)?
+![Hugo](image-1.png)
+
+## What is [Hugo](https://gohugo.io/)? 🤔
 
 Hugo is an open-source static site generator. [Static sites](https://davidwalsh.name/introduction-static-site-generators) take the content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered to the users.
 
@@ -9,7 +11,7 @@ It is written in Go. [Go](https://go.dev/) is an open-source programming languag
 
 Hugo is for people building a blog, a company site, a portfolio site, documentation, a single landing page, or a website with thousands of pages.
 
-## Why Hugo?
+## Why Hugo? 🥇
 
 [Top static site generators (SSG)](https://medium.com/@ezinneanne/top-ten-popular-static-site-generators-ssg-in-2023-e1894fca6925):
 
@@ -24,6 +26,8 @@ Hugo is for people building a blog, a company site, a portfolio site, documentat
 - Metalsmith - best customisable
 - Nuxtjs - easier for vue developers
 
+### Hugo vs Jekyll
+
 Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 
 - Search: for “Hugo to Jekyll” in Google, results are all about people switching from Jekyll to Hugo. Hugo even has instructions for a smooth migration from Jekyll to Hugo.
@@ -31,18 +35,21 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
 
 ![Image](image.png)
+
+<br>
+
 *Image from 2021*
 
-## How to start a Hugo website?
+## How to start a Hugo website? 👩‍💻
 
-[Quick start](https://gohugo.io/getting-started/quick-start/)
-[Directory structure](https://gohugo.io/getting-started/directory-structure/)
-[Documentation](https://gohugo.io/documentation/)
-[Community](https://discourse.gohugo.io/)
-[GitHub](https://github.com/gohugoio/hugo)
+- [Quick start](https://gohugo.io/getting-started/quick-start/)
+- [Directory structure](https://gohugo.io/getting-started/directory-structure/)
+- [Documentation](https://gohugo.io/documentation/)
+- [Community](https://discourse.gohugo.io/)
+- [GitHub](https://github.com/gohugoio/hugo)
 
-## What are [Themes](https://themes.gohugo.io/)?
+## What are [Themes](https://themes.gohugo.io/)? 🎨
 
 Themes are style and website templates. However, it is still possible to override these styles and templates if you want to. Furthermore, it is possible to create your own themes. The content of the pages is written with Markdown files, however, for specific situations, HTML can be used.
 
-*Hugo also has plenty of themes ready to go right away, but a prebuilt theme probably isn’t going to match your brand’s vision. Most likely, you’re going to want a custom theme, something that affords you fine-grained control over things like color schemes, typography, and UI components.* [opinion on draft.dev](https://draft.dev/learn/creating-hugo-themes)
+*Hugo also has plenty of themes ready to go right away, but a prebuilt theme probably isn’t going to match your brand’s vision. Most likely, you’re going to want a custom theme, something that affords you fine-grained control over things like color schemes, typography, and UI components.* *[opinion on draft.dev](https://draft.dev/learn/creating-hugo-themes)*
