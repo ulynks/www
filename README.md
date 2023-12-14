@@ -31,6 +31,7 @@ Hugo is for people building a blog, a company site, a portfolio site, documentat
 - Nuxtjs - easier for vue developers
 
 <br>
+
 ### Hugo vs Jekyll
 
 Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
