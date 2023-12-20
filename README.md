@@ -1,6 +1,6 @@
 # Institutional Website in Hugo
 
-![Hugo](image-1.png)
+![Hugo-Logo](https://github.com/luzep/freelance-facts/assets/8126807/aeb8ba60-ebb8-4215-9a88-3f73642fa061)
 
 ## What is [Hugo](https://gohugo.io/)? 🤔
 
@@ -33,7 +33,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
   
-![Image](image.png)
+![Jekyll vs. Hugo, side by side](https://github.com/luzep/freelance-facts/assets/8126807/c3aec9b6-dc24-4904-8c26-768952d141db)
 
 *Image from 2021*
 
