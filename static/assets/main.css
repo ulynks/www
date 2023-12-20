@@ -1,0 +1,114 @@
+/*!******************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./themes/ulynks/assets/css/app.css ***!
+  \******************************************************************************************************************************/
+body {
+  background: linear-gradient(119deg, #FBE6D8 -25.61%, #E07E3C 79.47%);
+  color: #333;
+  font-size: 125%;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.content {
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  background: rgba(192, 192, 192, 0);
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  padding: 10px;
+}
+
+.navbar__right {
+  display: flex;
+}
+
+a {
+  text-decoration: none !important;
+  color: #ffff;
+}
+
+.navbar__right a {
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 40px;
+  color: #ffff;
+  transition: all 100ms;
+}
+
+.navbar__right a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffff;
+}
+
+main {
+  margin: 0 200px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  background: #7A6040;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #DDCBA4;
+}
+
+.content-container {
+  display: flex;
+  max-width: 2000px;
+  /* Adjust the max-width as needed */
+  margin: 20px auto;
+}
+
+.text {
+  flex: 1;
+  padding: 60px;
+  color: #fff;
+}
+
+/* 
+body {
+  color: #222;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px;
+} 
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+a {
+  color: #00e;
+  text-decoration: none;
+} 
+*/

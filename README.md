@@ -75,3 +75,15 @@ Themes are style and website templates. However, it is still possible to overrid
 ## Website design 🎨
 
 The website design and style guide is being developed in [Figma](https://www.figma.com/file/JKRMEvhYzAikMkYPC2NtUK/Ulynks?type=design&t=NiP5aiQcdemmpAxl-6)
+
+## Yarn & Webpack
+
+Before you start using Yarn, you'll first need to install it on your system. There are many different ways to install Yarn, but a single one is recommended and cross-platform:
+
+`brew install yarn`
+
+see: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
+
+`yarn add --dev webpack webpack-cli`
+
+see: <https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3>

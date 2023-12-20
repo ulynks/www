@@ -11,12 +11,17 @@
   "problemMatcher": [],
   "tasks": [
     {
-      "label": "launch",
-      "command": "hugo version && hugo server --buildDrafts",
+      "label": "start",
+      "command": "yarn start",
       "runOptions": {
         "runOn": "folderOpen"
       },
       "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server."
+    },
+    {
+      "label": "upgrade",
+      "command": "yarn upgrade && yarn list",
+      "detail": "Update package.json."
     },
   ]
 }
