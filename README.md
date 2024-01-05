@@ -2,7 +2,7 @@
 
 ![Hugo-Logo](https://private-user-images.githubusercontent.com/8126807/294555138-ab556a2a-f8f9-40bb-b458-229a04a75298.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ0NzM0MTAsIm5iZiI6MTcwNDQ3MzExMCwicGF0aCI6Ii84MTI2ODA3LzI5NDU1NTEzOC1hYjU1NmEyYS1mOGY5LTQwYmItYjQ1OC0yMjlhMDRhNzUyOTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDVUMTY0NTEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjgzMGExMjU2Mjc4M2VlNTMyNzNkZDQxMDQwMDdhOTAyOWIyYWJkODRjNDZmMzZkZjBjMGQwNjYxMzIwYzU0NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.mdu4fPo3_PgGFvw6QogqoOJu-9OkXNlVznqMt0TraZc)
 
-## What is [Hugo](https://gohugo.io/)? 🤔
+## What is [Hugo](https://github.com/JV-conseil-Internet-Consulting/django-azure-active-directory-signin/assets/8126807/ca27b60e-e58e-4292-a5d3-cea483fcaec7)? 🤔
 
 Hugo is an open-source static site generator. [Static sites](https://davidwalsh.name/introduction-static-site-generators) take the content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered to the users.
 
@@ -33,7 +33,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
   
-![Jekyll vs. Hugo, side by side](https://private-user-images.githubusercontent.com/8126807/294555140-cd6016dc-d648-420b-bf1e-502035f2a658.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ0NzM0MTAsIm5iZiI6MTcwNDQ3MzExMCwicGF0aCI6Ii84MTI2ODA3LzI5NDU1NTE0MC1jZDYwMTZkYy1kNjQ4LTQyMGItYmYxZS01MDIwMzVmMmE2NTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDVUMTY0NTEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NzkyYmI1MzA2NzNkMjI1Yjk3YWFkNzM2MGJlOTZhNDcwMGJkZmNlMjYzMTI0MzRhMDk3ZWUzOWEyYjc1YzViMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.n7oHCboKMX3vVgIDQiNhwhMLS-zzt0i31fnOytO7MFo)
+![Jekyll vs. Hugo, side by side](https://github.com/JV-conseil-Internet-Consulting/django-azure-active-directory-signin/assets/8126807/3d584bf0-f1c9-49f7-8df3-92e0dd2c37a8)
 
 *Image from 2021*
 
@@ -64,7 +64,7 @@ hugo server
 
 see: <https://gohugo.io/getting-started/quick-start/#explanation-of-commands>
 
-![ulynks](https://private-user-images.githubusercontent.com/8126807/294555109-3caa6a4d-1ef9-446e-b47a-f1de4a5292e4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ0NzM0MTAsIm5iZiI6MTcwNDQ3MzExMCwicGF0aCI6Ii84MTI2ODA3LzI5NDU1NTEwOS0zY2FhNmE0ZC0xZWY5LTQ0NmUtYjQ3YS1mMWRlNGE1MjkyZTQucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDVUMTY0NTEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmMwOGYzOGJiMzViODM5NTFmMTI4NDUxYmFjMWY0ZGMyNDhjOTQ0ZDE1YzI4YzU4MzJkMDE0YTc1OGE0NWQxNSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.RUiAJAXuIt5CEQAXu4qjxGyxZi7hLCtb5AEG0iS18ZI)
+![ulynks](https://github.com/JV-conseil-Internet-Consulting/django-azure-active-directory-signin/assets/8126807/b4065052-c34d-46c3-88fb-905550371df7)
 
 ## What are [Themes](https://themes.gohugo.io/)? 🗂️
 
