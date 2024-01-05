@@ -1,6 +1,6 @@
 # Institutional Website in Hugo
 
-![Hugo-Logo](https://github.com/luzep/freelance-facts/assets/8126807/aeb8ba60-ebb8-4215-9a88-3f73642fa061)
+![Hugo-Logo](https://gist.github.com/assets/8126807/ab556a2a-f8f9-40bb-b458-229a04a75298)
 
 ## What is [Hugo](https://gohugo.io/)? 🤔
 
@@ -33,7 +33,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
   
-![Jekyll vs. Hugo, side by side](https://github.com/luzep/freelance-facts/assets/8126807/c3aec9b6-dc24-4904-8c26-768952d141db)
+![Jekyll vs. Hugo, side by side](https://gist.github.com/assets/8126807/cd6016dc-d648-420b-bf1e-502035f2a658)
 
 *Image from 2021*
 
@@ -64,7 +64,7 @@ hugo server
 
 see: <https://gohugo.io/getting-started/quick-start/#explanation-of-commands>
 
-![ulynks](https://github.com/ulynks/www/assets/8126807/f39c1280-6258-4185-bfd3-971933519ba3)
+![ulynks](https://gist.github.com/assets/8126807/3caa6a4d-1ef9-446e-b47a-f1de4a5292e4)
 
 ## What are [Themes](https://themes.gohugo.io/)? 🗂️
 
