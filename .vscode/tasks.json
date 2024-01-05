@@ -21,7 +21,12 @@
     {
       "label": "upgrade",
       "command": "yarn upgrade && yarn list",
-      "detail": "Update package.json."
+      "detail": "Upgrade package.json."
+    },
+    {
+      "label": "sass",
+      "command": "yarn sass",
+      "detail": "Generate themes/ulynks/assets/css/app.css."
     },
   ]
 }
