@@ -1,4 +1,36 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.ulynks.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ulynks" 
+title = 'uLynks'
+theme = 'ulynks'
+# theme = 'ananke'
+
+[[menus.main]]
+name = 'Home'
+pre = "home"
+url = "/"
+weight = 1
+
+[[menus.main]]
+name = 'About us'
+pageRef = '/about-us'
+weight = 2
+
+[[menus.main]]
+name = 'Services'
+pageRef = '/services'
+weight = 3
+
+[[menus.main]]
+name = 'Products'
+pageRef = '/products'
+weight = 4
+
+[[menus.main]]
+name = 'Contact us'
+pageRef = '/contact-us'
+weight = 5
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

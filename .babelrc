@@ -1,0 +1,13 @@
+// .babelrc
+// see: https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 3,
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}
