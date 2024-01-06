@@ -25,7 +25,7 @@
     },
     {
       "label": "sass",
-      "command": "yarn sass",
+      "command": "yarn sass && yarn start:webpack",
       "detail": "Generate themes/ulynks/assets/css/app.css."
     },
   ]
