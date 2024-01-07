@@ -1,11 +1,12 @@
 baseURL = 'https://www.ulynks.io/'
 languageCode = 'en-us'
 title = 'uLynks'
-theme = 'ulynks'
 # theme = 'ananke'
+theme = 'ulynks'
 
 [params]
   subtitle = ''
+  umami = '3cf42fbf-5ff7-4ba7-b4d1-607641c5b4e8'
   [params.contact]
     email = 'contact@ulynks.io'
     phone = ''
