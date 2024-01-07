@@ -4,9 +4,9 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/ulynks/www/badge)](https://www.codefactor.io/repository/github/ulynks/www)
 [![Deploy Hugo site to Pages](https://github.com/ulynks/www/actions/workflows/hugo.yml/badge.svg)](https://github.com/ulynks/www/actions/workflows/hugo.yml)
 
-![Hugo-Logo](https://private-user-images.githubusercontent.com/8126807/294555138-ab556a2a-f8f9-40bb-b458-229a04a75298.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ0NzM0MTAsIm5iZiI6MTcwNDQ3MzExMCwicGF0aCI6Ii84MTI2ODA3LzI5NDU1NTEzOC1hYjU1NmEyYS1mOGY5LTQwYmItYjQ1OC0yMjlhMDRhNzUyOTgucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDEwNSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAxMDVUMTY0NTEwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MjgzMGExMjU2Mjc4M2VlNTMyNzNkZDQxMDQwMDdhOTAyOWIyYWJkODRjNDZmMzZkZjBjMGQwNjYxMzIwYzU0NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.mdu4fPo3_PgGFvw6QogqoOJu-9OkXNlVznqMt0TraZc)
+![Hugo-Logo](https://github.com/ulynks/www/assets/8126807/74f5a28a-1fc2-4cce-a2a4-52c122f29921)
 
-## What is [Hugo](https://github.com/ulynks/www/assets/8126807/74f5a28a-1fc2-4cce-a2a4-52c122f29921)? 🤔
+## What is [Hugo](https://gohugo.io/)? 🤔
 
 Hugo is an open-source static site generator. [Static sites](https://davidwalsh.name/introduction-static-site-generators) take the content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered to the users.
 
