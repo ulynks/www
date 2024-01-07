@@ -11,3 +11,10 @@ $h1-size: 64px !default;
 $body-font: "Poppins", sans-serif !default;
 
 @import "@primer/css/index.scss";
+
+// Custom
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+}
