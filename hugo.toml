@@ -4,6 +4,12 @@ title = 'uLynks'
 theme = 'ulynks'
 # theme = 'ananke'
 
+[params]
+  subtitle = ''
+  [params.contact]
+    email = 'contact@ulynks.io'
+    phone = ''
+
 [[menus.main]]
 name = 'Home'
 pre = "home"
