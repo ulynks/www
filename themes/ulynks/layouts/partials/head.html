@@ -1,14 +1,23 @@
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- 
-        # NOTE: Deprecated w/ Webpack, @JV-conseil, 20231220
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-    -->
-    <link rel="stylesheet" type="text/css" href="/assets/main.css">
-    {{ $title := print .Site.Title " | " .Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <title>{{ $title }}</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ $title := print .Site.Title " | " .Title }}
+  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+  <meta name="author" content="{{ $title }}">
+  <meta name="description" content="{{ .Site.Params.subtitle }}">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="{{ .Site.Params.subtitle }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ $title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="twitter:title" content="{{ $title }}">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="canonical" href="{{ .Site.BaseURL }}">
+  <link rel="dns-prefetch" href=" https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/assets/main.css">
 </head>
