@@ -20,7 +20,7 @@
     },
     {
       "label": "upgrade",
-      "command": "yarn upgrade && yarn list",
+      "command": "yarn upgrade --latest && yarn list",
       "detail": "Upgrade package.json."
     },
     {
