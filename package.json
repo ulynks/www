@@ -8,10 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p start:*",
     "start:hugo": "hugo version && hugo server --buildDrafts",
-    "start:webpack": "webpack --mode=development --watch",
+    "start:webpack": "webpack --mode=production",
     "build": "run-s build:webpack build:hugo",
     "build:hugo": "hugo",
     "build:webpack": "webpack --mode=production",
+    "dev:webpack": "webpack --mode=development --watch",
     "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed"
   },
   "repository": {
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
-    "@primer/css": "^21.1.1"
+    "@primer/css": "^21.1.1",
+    "jquery": "^3.7.1"
   }
 }
