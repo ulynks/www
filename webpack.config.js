@@ -1,6 +1,9 @@
 // webpack.config.js
 // see: https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3
+// Minimizing For Production
+// see: https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require('path');
 
 module.exports = {
@@ -32,4 +35,18 @@ module.exports = {
     ],
   },
   plugins: [new MiniCssExtractPlugin()],
+  optimization: {
+    minimizer: [
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            "default",
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
+    ],
+  },
 };

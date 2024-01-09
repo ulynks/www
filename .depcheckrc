@@ -1,0 +1,7 @@
+# Usage with a configuration file
+# see: https://github.com/depcheck/depcheck#usage-with-a-configuration-file
+ignores: [
+  "@babel/*",
+  "depcheck",
+  "webpack-cli",
+]
