@@ -36,7 +36,7 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Search: for “Hugo to Jekyll” in Google, results are all about people switching from Jekyll to Hugo. Hugo even has instructions for a smooth migration from Jekyll to Hugo.
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
-  
+
 ![Jekyll vs. Hugo, side by side](https://github.com/ulynks/www/assets/8126807/07b0eeae-b9ae-4a9c-8c3f-53c266aec302)
 
 *Image from 2021*
