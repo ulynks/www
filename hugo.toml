@@ -5,7 +5,7 @@ title = 'uLynks'
 theme = 'ulynks'
 
 [params]
-  subtitle = ''
+  subtitle = 'Growing on Fyn, Denmark 🇩🇰'
   umami = '3cf42fbf-5ff7-4ba7-b4d1-607641c5b4e8'
   [params.contact]
     email = 'contact@ulynks.io'
