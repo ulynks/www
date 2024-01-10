@@ -3,6 +3,7 @@
 [![CodeQL](https://github.com/ulynks/www/actions/workflows/codeql.yml/badge.svg?branch=dev)](https://github.com/ulynks/www/actions/workflows/codeql.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/ulynks/www/badge)](https://www.codefactor.io/repository/github/ulynks/www)
 [![Deploy Hugo site to Pages](https://github.com/ulynks/www/actions/workflows/hugo.yml/badge.svg)](https://github.com/ulynks/www/actions/workflows/hugo.yml)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=ulynks.www)
 
 ![Hugo-Logo](https://github.com/ulynks/www/assets/8126807/74f5a28a-1fc2-4cce-a2a4-52c122f29921)
 
@@ -37,9 +38,30 @@ Hugo’s popularity seems to be growing at a faster pace than Jekyll’s:
 - Github stars: Jekyll (47.6k) vs Hugo (70.3k)
 - Trends: [Jekyll](https://trends.builtwith.com/cms/Jekyll) vs [Hugo](https://trends.builtwith.com/cms/Hugo)
 
-![Jekyll vs. Hugo, side by side](https://github.com/ulynks/www/assets/8126807/07b0eeae-b9ae-4a9c-8c3f-53c266aec302)
+| Comparison                      | Jekyll                                                                    | Hugo                                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| First release                   | 2008                                                                      | 2013                                                                                 |
+| Built with                      | Ruby                                                                      | Go                                                                                   |
+| Templating engine               | Liquid                                                                    | Go Templates                                                                         |
+| Plugins                         | Yes, via Ruby Gems                                                        | No, but still extendable with a bit more work                                        |
+| GitHub stars                    | 42K+                                                                      | 49K+                                                                                 |
+| Themes                          | Yes                                                                       | Yes                                                                                  |
+| Open source licence             | MIT                                                                       | Apache 2.0                                                                           |
+| Installation requirements       | Ruby must be installed.                                                   | None, Hugo is a single binary.                                                       |
+| Asset pipeline                  | SASS and CoffeeScript out of the box, plugins for almost everything else. | SASS, JS, images, bundling… Hugo does a LOT out of the box. But no plugin ecosystem. |
+| Build times                     | “Fast-ish” since version 4.0                                              | Fastest in class                                                                     |
+| Multilingual and i18n           | Through plugins                                                           | Built in                                                                             |
+| Shortcodes                      | Yes                                                                       | Yes                                                                                  |
+| Easy WordPress et al. converter | Yes: Jekyll converter                                                     | Yes: Hugo converter                                                                  |
+| Learning curve                  | Gentle, especially if you have Ruby experience.                           | Less gentle. Go templating is subjectively harder.                                   |
+| Supported content types         | Markdown, HTML + more through plugins                                     | Markdown, AsciiDoc, RST, HTML                                                        |
+| Support communities             | Jekyll Talk Gitter                                                        | Hugo Discourse                                                                       |
+| CLI tool                        | Yes                                                                       | Yes                                                                                  |
+| Hot reloading dev server        | Yes                                                                       | Yes                                                                                  |
+| Twitter accounts                | Jekyll Twitter                                                            | Hugo Twitter                                                                         |
+| GitHub repos                    | Jekyll GitHub                                                             | Hugo GitHub                                                                          |
 
-*Image from 2021*
+*src: [Jekyll vs. Hugo, side by side](https://cloudcannon.com/blog/jekyll-vs-hugo-choosing-the-right-tool-for-the-job/) by CloudCannon · 4 Mar 2021*
 
 ## How to start a Hugo website? 👩‍💻
 
