@@ -115,4 +115,3 @@ see: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
 `yarn add --dev webpack webpack-cli`
 
 see: <https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3>
-
