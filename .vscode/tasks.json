@@ -12,7 +12,7 @@
   "tasks": [
     {
       "label": "start",
-      "command": "yarn start",
+      "command": "yarn run start",
       "runOptions": {
         "runOn": "folderOpen"
       },
@@ -20,12 +20,12 @@
     },
     {
       "label": "sass",
-      "command": "yarn sass && yarn start:webpack",
+      "command": "yarn run sass && yarn run start:webpack",
       "detail": "Generate themes/ulynks/assets/css/app.css."
     },
     {
       "label": "yarn",
-      "command": "yarn update",
+      "command": "yarn run update",
       "detail": "Upgrade package.json."
     },
   ]

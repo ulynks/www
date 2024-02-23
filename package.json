@@ -6,7 +6,7 @@
   "browserslist": "> 1%",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-p start:*",
+    "start": "run-p 'start:*'",
     "start:hugo": "hugo version && hugo server --buildDrafts",
     "start:webpack": "webpack --mode=production",
     "build": "run-s build:webpack build:hugo",
@@ -14,7 +14,7 @@
     "build:webpack": "webpack --mode=production",
     "dev:webpack": "webpack --mode=development --watch",
     "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
-    "update": "brew upgrade yarn && yarn upgrade --latest && npx yarn-audit-fix && yarn list && npx depcheck --detailed"
+    "update": "yarn up && yarn npm audit && npx depcheck --detailed"
   },
   "repository": {
     "type": "git",
@@ -41,8 +41,7 @@
     "postcss-loader": "^8.1.0",
     "sass": "^1.71.1",
     "webpack": "^5.90.3",
-    "webpack-cli": "^5.1.4",
-    "yarn-audit-fix": "^10.0.7"
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
