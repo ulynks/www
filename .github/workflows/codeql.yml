@@ -13,7 +13,7 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "dev", "_dev" ]
+    branches: ["bootstrap", "dev", "@primer-css"]
   # pull_request:
   #   branches: [ "main", "_main" ]
   schedule:
