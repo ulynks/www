@@ -1,3 +1,4 @@
+/* global $ */
 // import $ from "jquery";
 
 const SITE = {
