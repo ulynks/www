@@ -2,6 +2,10 @@
 # see: https://github.com/depcheck/depcheck#usage-with-a-configuration-file
 ignores: [
   "@babel/*",
+  "@fontsource/poppins",
+  "core-js",
+  "css-minimizer-webpack-plugin",
   "depcheck",
+  "jquery",
   "webpack-cli",
 ]

@@ -1,11 +1,12 @@
 <!-- Start Navbar -->
 <nav class="UnderlineNav" aria-label="Nav bar">
   <div class="UnderlineNav-body">
-    <img class="avatar" height="40" alt="{{ .Site.Title }}" src="/img/logo.png" width="40">
-    <a class="UnderlineNav-item app-link" href="#home" aria-current="page">Home</a>
-    <a class="UnderlineNav-item app-link" href="#about">About</a>
-    <a class="UnderlineNav-item app-link" href="#services">Services</a>
-    <a class="UnderlineNav-item app-link" href="#products">Products</a>
+    <a href="/"><img class="avatar" height="40" alt="{{ .Site.Title }}" src="/img/logo.png" width="40"></a>
+    {{- range site.Menus.main }}
+    <a class="UnderlineNav-item app-link" href="{{ .URL }}">
+      {{ .Name }}
+    </a>
+    {{- end }}
   </div>
   <div class="UnderlineNav-actions reach-us"><a href="#"
       data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
