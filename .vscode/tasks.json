@@ -25,7 +25,7 @@
     },
     {
       "label": "yarn",
-      "command": "yarn run update",
+      "command": "npm run yarn-update",
       "detail": "Upgrade package.json."
     },
   ]
