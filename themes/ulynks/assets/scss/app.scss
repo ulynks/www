@@ -1,24 +1,76 @@
-// Primer CSS Typography variables
-// see: <https://github.com/pages-themes/primer/blob/master/_sass/primer-support/lib/variables/typography.scss>
+// Bootstrap v5.3.3
+// Learn how to theme, customize, and extend Bootstrap with Sass, a boatload of global options, an expansive color system, and more.
+// see: <https://getbootstrap.com/docs/5.3/customize/sass/>
 
-// Heading sizes - desktop
-// $h1-size: 32px !default;
-$h1-size: 64px !default;
+// Custom.scss
+// Option B: Include parts of Bootstrap
 
-// Font stacks
-// $body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-$body-font: "Poppins", sans-serif !default;
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
 
-@import "@primer/css/index.scss";
+// 2. Include any default variable overrides here
 
-// Custom
+@import "2-variable-overrides";
 
-.Footer {
-  position: fixed;
-  bottom: 0;
-}
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
 
-.w-1200 {
-  max-width: 1200px;
-}
+// 4. Include any default map overrides here
+
+// $colors: map-merge($colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $colors);
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+// 5.1. Add a custom color to new theme maps
+// $theme-colors-text: map-merge($theme-colors-text, $custom-theme-colors-text);
+// $theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, $custom-theme-colors-bg-subtle);
+// $theme-colors-border-subtle: map-merge($theme-colors-border-subtle, $custom-theme-colors-border-subtle);
+
+// 5.2. Optionally include any other parts as needed
+@import "bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/accordion";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+@import "8-fonts";
+@import "8-custom";

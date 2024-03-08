@@ -3,6 +3,8 @@
 ignores: [
   "@babel/*",
   "@fontsource/poppins",
+  "@popperjs/core",
+  "bootstrap",
   "core-js",
   "css-minimizer-webpack-plugin",
   "depcheck",

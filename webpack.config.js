@@ -1,9 +1,17 @@
 // webpack.config.js
-// see: https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3
+// see: <https://dev.to/tegandbiscuits/building-a-static-site-with-hugo-and-webpack-pd3>
+
+// Bootstrap v5.3.3
+// see: <https://getbootstrap.com/docs/5.3/getting-started/webpack/#configure-webpack>
+
+// 'use strict'
+
 // Minimizing For Production
-// see: https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production
+// see: <https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production>
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+
 const path = require('path');
 
 module.exports = {

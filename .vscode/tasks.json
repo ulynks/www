@@ -19,14 +19,14 @@
       "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server."
     },
     {
-      "label": "sass",
-      "command": "yarn run sass && yarn run start:webpack",
-      "detail": "Generate themes/ulynks/assets/css/app.css."
+      "label": "assets",
+      "command": "yarn run assets",
+      "detail": "Build assets."
     },
     {
       "label": "yarn",
       "command": "npm run yarn-update",
-      "detail": "Upgrade package.json."
+      "detail": "Update dependencies."
     },
   ]
 }
