@@ -45,6 +45,7 @@
   "dependencies": {
     "@fontsource/poppins": "^5.0.8",
     "@primer/css": "^21.2.0",
+    "bootstrap": "^5.3.3",
     "jquery": "^3.7.1"
   }
 }

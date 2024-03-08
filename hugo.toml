@@ -1,8 +1,7 @@
 baseURL = 'https://www.ulynks.io/'
 languageCode = 'en-us'
 title = 'uLynks'
-# theme = 'ananke'
-theme = 'ulynks'
+theme = 'ulynks_bootstrap'
 
 [params]
   subtitle = 'Growing on Fyn, Denmark 🇩🇰'
@@ -28,8 +27,8 @@ pageRef = '/services'
 weight = 3
 
 [[menus.main]]
-name = 'Products'
-pageRef = '/products'
+name = 'Portfolio'
+pageRef = '/portfolio'
 weight = 4
 
 [[menus.main]]
