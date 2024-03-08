@@ -12,21 +12,21 @@
   "tasks": [
     {
       "label": "start",
-      "command": "yarn start",
+      "command": "yarn run start",
       "runOptions": {
         "runOn": "folderOpen"
       },
       "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server."
     },
     {
-      "label": "upgrade",
-      "command": "yarn upgrade --latest && yarn list && npx depcheck",
-      "detail": "Upgrade package.json."
+      "label": "sass",
+      "command": "yarn run sass && yarn run start:webpack",
+      "detail": "Generate themes/ulynks/assets/css/app.css."
     },
     {
-      "label": "sass",
-      "command": "yarn sass && yarn start:webpack",
-      "detail": "Generate themes/ulynks/assets/css/app.css."
+      "label": "yarn",
+      "command": "npm run yarn-update",
+      "detail": "Upgrade package.json."
     },
   ]
 }
