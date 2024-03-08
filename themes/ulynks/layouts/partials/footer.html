@@ -41,10 +41,9 @@
       <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
         <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="{{ .Site.Params.contact.mastodon }}"><i
-                class="bi bi-mastodon"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="{{ .Site.Params.contact.linkedin }}"><i
-                class="bi bi-linkedin"></i></a></li>
+          {{- range site.Params.social }}
+          <li class="ms-3"><a class="link-body-emphasis" href="{{ .url }}"><i class="bi bi-{{ .icon }}"></i></a></li>
+          {{- end }}
         </ul>
       </div>
     </div>

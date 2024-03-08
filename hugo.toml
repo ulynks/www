@@ -9,20 +9,20 @@ theme = 'ulynks'
 
 [server]
 [[server.headers]]
-    for = '/**'
-    [server.headers.values]
-      Content-Security-Policy = """
-      default-src 'self';
-      connect-src 'self' https://eu.umami.is;
-      font-src 'self' https://fonts.gstatic.com;
-      img-src 'self' https://*;
-      script-src 'self' https://eu.umami.is;
-      style-src 'self' https://fonts.googleapis.com
-      """
-      Referrer-Policy = 'strict-origin-when-cross-origin'
-      X-Content-Type-Options = 'nosniff'
-      X-Frame-Options = 'DENY'
-      X-XSS-Protection = '1; mode=block'
+  for = '/**'
+  [server.headers.values]
+    Content-Security-Policy = """
+    default-src 'self';
+    connect-src 'self' https://eu.umami.is;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' https://*;
+    script-src 'self' https://eu.umami.is;
+    style-src 'self' https://fonts.googleapis.com
+    """
+    Referrer-Policy = 'strict-origin-when-cross-origin'
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'
 
 [params]
   subtitle = 'Growing on Fyn, Denmark 🇩🇰'
@@ -31,8 +31,15 @@ theme = 'ulynks'
   [params.contact]
     email = 'contact@ulynks.io'
     phone = ''
-    linkedin = 'https://www.linkedin.com/company/ulynks'
-    mastodon = 'https://mastodon.social/@ulynks'
+  [[params.social]]
+    icon  = "github"
+    url   = "https://github.com/ulynks"
+  [[params.social]]
+    icon  = "mastodon"
+    url   = "https://mastodon.social/@ulynks"
+  [[params.social]]
+    icon  = "linkedin"
+    url   = "https://www.linkedin.com/company/ulynks"
 
 [[menus.main]]
 name = 'Team'
