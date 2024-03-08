@@ -42,7 +42,8 @@
         <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           {{- range site.Params.social }}
-          <li class="ms-3"><a class="link-body-emphasis" href="{{ .url }}"><i class="bi bi-{{ .icon }}"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="{{ .url }}" title="Visit {{ .icon }} account"><i
+                class="bi bi-{{ .icon }}"></i></a></li>
           {{- end }}
         </ul>
       </div>
