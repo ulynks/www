@@ -5,6 +5,7 @@
   "private": true,
   "browserslist": "> 1%",
   "scripts": {
+    "assets": "(yarn run sass & yarn run vendor) && yarn run start:webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p 'start:*'",
     "start:hugo": "hugo version && hugo server --buildDrafts",
@@ -14,6 +15,7 @@
     "build:webpack": "webpack --mode=production",
     "dev:webpack": "webpack --mode=development --watch",
     "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
+    "vendor": "cp -pv node_modules/bootstrap/dist/js/bootstrap.bundle.min.js static/vendor/bootstrap.bundle.min.js & cp -pv node_modules/jquery/dist/jquery.min.js static/vendor/jquery.min.js",
     "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && npx depcheck --detailed && yarn upgrade-interactive"
   },
   "repository": {
@@ -46,8 +48,9 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.12",
-    "@primer/css": "^21.2.0",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "jquery": "^3.7.1"
   },
   "packageManager": "yarn@4.1.1"

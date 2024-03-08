@@ -1,17 +1,17 @@
 {{ define "main" }}
-<h1 class="title-h1 border-bottom-0 mb-0">{{ .Title }}</h1>
+<main>
+  <div class="container py-5">
 
-{{ $dateMachine := .Date | time.Format "2024-02-20T00:00:45+01:00" }}
-{{ $dateHuman := .Date | time.Format ":date_long" }}
-<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    <h1 class="display-1">{{ .Title }}</h1>
 
-<main class="markdown-body">
+    {{ $dateMachine := .Date | time.Format "2024-02-20T00:00:45+01:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time class="text-body-secondary" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
-  <article class="lead pt-6">
-    {{ .Content }}
-  </article>
+    <p class="lead">{{ .Content }}</p>
 
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </div>
 </main>
 {{ end }}

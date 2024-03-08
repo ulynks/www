@@ -1,19 +1,15 @@
 {{ define "main" }}
-<main class="markdown-body pt-12">
-
-  <article class="lead pt-6">
-    <h1 class="title-h1 border-bottom-0 mb-0">{{ .Title }}</h1>
-
-    <!--
-    {{ $dateMachine := .Date | time.Format "2024-02-20T00:00:45+01:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    -->
-
-    {{ .Content }}
-  </article>
-
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-
+<main>
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col">
+        {{ .Content }}
+        <a class="btn btn-primary" href="/team" role="button">Get to know us</a>
+      </div>
+      <div class="col">
+        <img src="/img/home.png" alt="uLynks" class="img-fluid" width="800">
+      </div>
+    </div>
+  </div>
 </main>
 {{ end }}

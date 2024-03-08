@@ -1,5 +1,52 @@
-<footer class="Footer py-3">
-  <p><a class="fgColor-default" href="{{ .Site.Params.mainWebsite }}">{{ .Site.Title }} Copyright
-      {{ now.Year }}</a>. All rights reserved.
-  </p>
+<footer class="mt-auto">
+  <div class="container-fluid bg-orange py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5>Explore</h5>
+          <ul class="nav flex-column">
+            {{- range site.Menus.main }}
+            <li class="nav-item mb-2">
+              <a class="nav-link p-0 text-body-secondary" href="{{ .URL }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{- end }}
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5>Address</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item text-body-secondary">Cortex Park 26</li>
+            <li class="nav-item text-body-secondary">Room 3.2.19</li>
+            <li class="nav-item text-body-secondary">DK-5230 Odense M</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5>Contacts</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="#"
+                data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
+                data-subject="Sent From {{ .Site.Title }}' Website">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="col text-end">
+          <img src="/img/logo-footer.png" alt="uLynks" class="img-fluid" width="200">
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="{{ .Site.Params.contact.mastodon }}"><i
+                class="bi bi-mastodon"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="{{ .Site.Params.contact.linkedin }}"><i
+                class="bi bi-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>

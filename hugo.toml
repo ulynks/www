@@ -1,7 +1,7 @@
 baseURL = 'https://www.ulynks.io/'
 languageCode = 'en-us'
 title = 'uLynks'
-theme = 'ulynks_bootstrap'
+theme = 'ulynks'
 
 # Configure server
 # - https://gohugo.io/getting-started/configuration/#configure-server
@@ -14,8 +14,8 @@ theme = 'ulynks_bootstrap'
       Content-Security-Policy = """
       default-src 'self';
       connect-src 'self' https://eu.umami.is;
-      font-src https://fonts.gstatic.com;
-      script-src 'self' https://cdn.jsdelivr.net https://eu.umami.is;
+      font-src 'self' https://fonts.gstatic.com;
+      script-src 'self' https://eu.umami.is;
       style-src 'self' https://fonts.googleapis.com
       """
       Referrer-Policy = 'strict-origin-when-cross-origin'
@@ -30,6 +30,8 @@ theme = 'ulynks_bootstrap'
   [params.contact]
     email = 'contact@ulynks.io'
     phone = ''
+    linkedin = 'https://www.linkedin.com/company/ulynks'
+    mastodon = 'https://mastodon.social/@ulynks'
 
 [[menus.main]]
 name = 'Team'
@@ -46,15 +48,10 @@ name = 'Expertise'
 pageRef = '/expertise'
 weight = 3
 
-[[menus.main]]
-name = 'Portfolio'
-pageRef = '/portfolio'
-weight = 4
-
-[[menus.main]]
-name = 'Contact us'
-pageRef = '/contact-us'
-weight = 5
+# [[menus.main]]
+# name = 'Contact us'
+# pageRef = '/contact-us'
+# weight = 4
 
 [module]
   [module.hugoVersion]

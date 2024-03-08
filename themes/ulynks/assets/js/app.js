@@ -1,6 +1,9 @@
 /* global $ */
 // import $ from "jquery";
 
+// Import all of Bootstrap's JS
+// import * as bootstrap from 'bootstrap'
+
 const SITE = {
   title: "uLynks",
 }
@@ -19,8 +22,6 @@ $(function () {
     })
     $(this).attr('aria-current', 'page')
   })
-  */
-
 
   $('.app-link').each(function () {
     $(this).removeAttr('aria-current')
@@ -30,6 +31,18 @@ $(function () {
     if (!page.match(link)) return
     $(this).attr('aria-current', 'page')
   })
+  */
+
+  $('.nav-link').each(function () {
+    $(this).removeClass('active').removeAttr('aria-current')
+    let link = $(this).text().trim()
+    // console.debug("link", link);
+    link = new RegExp(link, 'gi');
+    if (!page.match(link)) return
+    $(this).addClass('active').attr('aria-current', 'page')
+  })
+
+
 
   $('a[data-mail]').on('click', function () {
     window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
