@@ -15,6 +15,7 @@ theme = 'ulynks'
       default-src 'self';
       connect-src 'self' https://eu.umami.is;
       font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' https://*;
       script-src 'self' https://eu.umami.is;
       style-src 'self' https://fonts.googleapis.com
       """
@@ -48,10 +49,10 @@ name = 'Expertise'
 pageRef = '/expertise'
 weight = 3
 
-# [[menus.main]]
-# name = 'Contact us'
-# pageRef = '/contact-us'
-# weight = 4
+[[menus.main]]
+name = 'Events'
+pageRef = '/events'
+weight = 4
 
 [module]
   [module.hugoVersion]
