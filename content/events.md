@@ -3,6 +3,7 @@ title: Events
 date: 2024-03-08T21:44:00+01:00
 description: Events
 draft: false
+tags: ["earma", "events"]
 ---
 
 ## EARMA Conference Odense 2024
