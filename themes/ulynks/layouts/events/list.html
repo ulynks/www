@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<main>
+
+  <div class="container py-5">
+
+    <h1 class="display-1">{{ .Title }}</h1>
+
+    <div>
+
+      {{/* reverse so that the most recent event appears first  */}}
+      {{ range .Pages.Reverse }}
+
+      <h2 class="mt-5"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+
+      {{/* add the event date and location */}}
+      <p class="text-body-secondary py-3"><time
+          datetime="{{ .Params.event_date | dateFormat "2006-01-02" }}">{{ .Params.event_date | dateFormat "January 2, 2006" }}</time>
+        - {{ .Params.location }}
+      </p>
+
+
+      {{/* add the tags  */}}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+      <br>
+
+      {{/* add the event image  */}}
+      <img src="{{ .Params.image_url }}">
+
+      {{ end }}
+    </div>
+
+
+  </div>
+</main>
+{{ end }}
