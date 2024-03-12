@@ -6,7 +6,7 @@
 
     {{ .Content }}
     {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <h2>{{ .LinkTitle }}&nbsp;<a href="{{ .RelPermalink }}"><i class="bi bi-box-arrow-up-right"></i></a></h2>
     {{ .Summary }}
     {{ end }}
 

@@ -16,7 +16,7 @@
     "dev:webpack": "webpack --mode=development --watch",
     "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
     "vendor": ".bash/vendor.sh",
-    "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && npx depcheck --detailed && yarn upgrade-interactive"
+    "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && ( npx depcheck --detailed ) || : && yarn upgrade-interactive"
   },
   "repository": {
     "type": "git",

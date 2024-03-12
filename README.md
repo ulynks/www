@@ -8,3 +8,13 @@
 [![Follow uLynks on Mastodon](https://img.shields.io/mastodon/follow/111813739207573245)](https://mastodon.social/@ulynks "Follow @ulynks@mastodon.social on Mastodon")
 
 Growing on Fyn, Denmark 🇩🇰
+
+## Usage
+
+```bash
+for _who in "alexander-dernild" "dusan-misevic" "lionel-jouvet" "julien-vieillefont"; do
+  hugo new content "team/${_who}.md"
+done
+```
+
+:point_right: An [archetype](https://gohugo.io/content-management/archetypes/#overview) is a template for new content.
