@@ -1,6 +1,5 @@
 {{ define "main" }}
 <main>
-
   <div class="container py-5">
 
     <div class="row align-items-center">
@@ -19,7 +18,7 @@
       <h1 class="fw-bold mt-4 mb-5">How we can help you</h1>
       <div class="row">
         <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="card-body text-center">
               <i class="bi bi-bar-chart"></i>
               <h5 class="card-title fw-bold">Data Analysis</h5>
@@ -28,7 +27,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="card-body text-center">
               <i class="bi bi-laptop"></i>
               <h5 class="card-title fw-bold">Web Apps</h5>
@@ -37,7 +36,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="card-body text-center">
               <i class="bi bi-signpost-split"></i>
               <h5 class="card-title fw-bold">AI</h5>
@@ -48,7 +47,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="card-body text-center">
               <i class="bi bi-mortarboard-fill"></i>
               <h5 class="card-title fw-bold">Training</h5>
@@ -57,34 +56,33 @@
           </div>
         </div>
       </div>
-      <a class="btn btn-primary mt-5" href="/expertise" role="button">See all expertise</a>
+      <p><a class="btn btn-primary mt-5" href="/expertise" role="button">See all expertise</a></p>
     </div>
 
     <div class="mt-5 mb-5">
       <h1 class="fw-bold">Brands that trust us</h1>
-      <div class="row mb-5 p-5">
-        <div class="col-md-4">
-          <img src="img/white-sdu.png" alt="SDU" class="img-fluid" width=100>
-        </div>
-        <div class="col-md-4">
-          <img src="img/white-aa.png" alt="Aalborg" class="img-fluid" width=100>
-        </div>
-        <div class="col-md-4">
-          <img src="img/white-banos.png" alt="Blue Mission BANOS" class="img-fluid" width=100>
-        </div>
-      </div>
-      <div class="row  mb-5 p-5">
-        <div class="col-md-4">
-          <img src="img/white-prep4blue.png" alt="PREP4BLUE" class="img-fluid" width=200>
-        </div>
-        <div class="col-md-4">
-          <img src="img/white-bmaa.png" alt="Blue Mission AA" class="img-fluid" width=200>
-        </div>
-        <div class="col-md-4">
-          <img src="img/white-yerun.png" alt="YERUN" class="img-fluid" width=200>
-        </div>
-      </div>
-      <a class="btn btn-primary mt-5" href="/portfolio" role="button">See our portfolio</a>
+      <table class="w-100">
+        <tr>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-sdu.png" alt="SDU">
+          </td>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-aa.png" alt="Aalborg">
+          </td>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-yerun.png" alt="YERUN">
+        </tr>
+        <tr>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-prep4blue.png" alt="PREP4BLUE">
+          </td>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-banos.png"
+              alt="Blue Mission BANOS">
+          </td>
+          <td class="text-center align-middle p-5"><img class="img-fluid" src="img/white-bmaa.png"
+              alt="Blue Mission AA">
+          </td>
+          </td>
+        </tr>
+      </table>
+
+      <p><a class="btn btn-primary mt-5" href="/portfolio" role="button">See our portfolio</a></p>
     </div>
   </div>
 </main>

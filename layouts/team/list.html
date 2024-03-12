@@ -4,42 +4,43 @@
 
     <h1 class="display-1">Discover our Team</h1>
 
-    <div class="container">
-      <div class="row">
 
-        {{/* reverse so that the most recent event appears first  */}}
+    <div class="row">
+
+      {{/* reverse so that the most recent event appears first  */}}
 
 
-        {{ range $i, $page := .Pages.Reverse }}
-        {{ $i = add $i 1 }}
+      {{ range $i, $page := .Pages.Reverse }}
+      {{ $i = add $i 1 }}
 
-        {{ if eq ( mod $i 4 ) 1 }}
-      </div>
-      <div class="row pt-5">
-        {{ end }}
+      {{ if eq ( mod $i 4 ) 1 }}
+    </div>
+    <div class="row pt-5">
+      {{ end }}
 
-        {{/* card with image, title, description and buttons  */}}
-        <div class="col">
-          <div class="card">
-            <div class="card-header text-center p-0">
-              <img class="card-img-top rounded" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
-            </div>
-            <div class="card-body overflow-y-scroll">
-              <h2 class="card-title">{{ .LinkTitle }}</h2>
-              <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
-            </div>
-            <div class="card-footer bg-transparent border-dark py-3">
-              <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button"><i class="bi bi-person-fill"></i></a>
-              <a class="btn btn-primary ms-2" href="{{ .Params.linkedin }}" role="button"><i
-                  class="bi bi-linkedin"></i></a>
-              <a class="btn btn-primary ms-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
-            </div>
+      {{/* card with image, title, description and buttons  */}}
+      <div class="col">
+        <div class="card">
+          <div class="card-header text-center p-0">
+            <img class="card-img-top rounded" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
+          </div>
+          <div class="card-body overflow-y-scroll">
+            <h2 class="card-title">{{ .LinkTitle }}</h2>
+            <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
+          </div>
+          <div class="card-footer bg-transparent border-dark py-3">
+            <a class="btn btn-primary me-2" href="{{ .RelPermalink }}" role="button"><i
+                class="bi bi-person-fill"></i></a>
+            <a class="btn btn-primary me-2" href="{{ .Params.linkedin }}" role="button"><i
+                class="bi bi-linkedin"></i></a>
+            <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
           </div>
         </div>
-
-        {{ end }}
       </div>
+
+      {{ end }}
     </div>
+
 
 
   </div>

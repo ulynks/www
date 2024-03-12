@@ -2,6 +2,8 @@
 <main>
   <div class="container py-5">
 
+    <div class="float-end ps-5 w-25"><img class="rounded" src="{{ .Params.image }}" alt="{{ .LinkTitle }}"></div>
+
     <h1 class="display-1">{{ .Title }}</h1>
 
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
@@ -12,6 +14,10 @@
 
     {{ .Content }}
 
+    <p>
+      <a class="btn btn-primary me-2" href="{{ .Params.linkedin }}" role="button"><i class="bi bi-linkedin"></i></a>
+      <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
+    </p>
   </div>
 </main>
 {{ end }}
