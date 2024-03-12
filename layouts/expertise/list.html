@@ -2,37 +2,35 @@
 <main>
   <div class="container py-5">
 
-    <h1 class="display-1 mb-4">Discover our Expertises</h1>
+    <h1 class="display-1 mb-5">Discover our Expertises</h1>
 
-    <div class="container py-5 h-100">
-      <div class="row h-100">
 
-        {{/* reverse so that the most recent event appears first  */}}
-        {{ range .Pages.Reverse }}
+    <div class="row">
 
-        {{/* card with image, title, description and buttons  */}}
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-header text-center">
-              <img class="card-img-top h-100 w-auto" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
-            </div>
-            <div class="card-body h-100">
-              <h2 class="card-title">{{ .LinkTitle }}&nbsp;<a href="{{ .RelPermalink }}"><i
-                    class="bi bi-box-arrow-up-right"></i></a></h2>
-              <p class="card-text">{{ .Content }}</p>
-            </div>
-            <div class="card-footer bg-transparent border-dark py-3">
-              <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button">Learn more</a>
-              <a class="btn btn-primary ms-2" href="#" data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
-                data-subject="Sent From {{ .Site.Title }}' Website" role="button">Contact us</a>
-            </div>
+      {{/* reverse so that the most recent event appears first  */}}
+      {{ range .Pages.Reverse }}
+
+      {{/* card with image, title, description and buttons  */}}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-header text-center">
+            <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
+          </div>
+          <div class="card-body overflow-y-scroll h-50">
+            <h2 class="card-title">{{ .LinkTitle }}</h2>
+            <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
+          </div>
+          <div class="card-footer bg-transparent border-dark py-3">
+            <a class="btn btn-primary me-2" href="{{ .RelPermalink }}" role="button">Read more</a>
+            <a class="btn btn-primary me-2" href="#" data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
+              data-subject="Sent From {{ .Site.Title }}' Website" role="button"><i class="bi bi-envelope-fill"></i></a>
           </div>
         </div>
-
-
-
-        {{ end }}
       </div>
+
+
+
+      {{ end }}
     </div>
 
 

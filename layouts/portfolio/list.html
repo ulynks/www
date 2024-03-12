@@ -2,37 +2,34 @@
 <main>
   <div class="container py-5">
 
-    <h1 class="display-1 mb-4">Discover our Portfolio</h1>
+    <h1 class="display-1 mb-5">Discover our Portfolio</h1>
 
-    <div class="container py-5">
-      <div class="row">
+    <div class="row">
 
-        {{/* reverse so that the most recent event appears first  */}}
-        {{ range .Pages.Reverse }}
+      {{/* reverse so that the most recent event appears first  */}}
+      {{ range .Pages.Reverse }}
 
-        {{/* card with image, title, description and buttons  */}}
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-header text-center h-25">
-              <img class="card-img-top h-100 w-auto" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
-            </div>
-            <div class="card-body overflow-y-scroll">
-              <h2 class="card-title">{{ .LinkTitle }}&nbsp;<a href="{{ .RelPermalink }}"><i
-                    class="bi bi-box-arrow-up-right"></i></a></h2>
-              <p class="card-text">{{ .Content }}</p>
-            </div>
-            <div class="card-footer bg-transparent border-dark py-3">
-              <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button">Learn more</a>
-              <a class="btn btn-primary ms-2" href="{{ .Params.link }}" target="_blank" role="button">Get
-                started</a>
-            </div>
+      {{/* card with image, title, description and buttons  */}}
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-header text-center">
+            <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
+          </div>
+          <div class="card-body overflow-y-scroll h-50">
+            <h2 class="card-title">{{ .LinkTitle }}</h2>
+            <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
+          </div>
+          <div class="card-footer bg-transparent border-dark py-3">
+            <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button">Read more</a>
+            <a class="btn btn-primary ms-2" href="{{ .Params.link }}" target="_blank" role="button"><i
+                class="bi bi-box-arrow-up-right"></i></a>
           </div>
         </div>
-
-
-
-        {{ end }}
       </div>
+
+
+
+      {{ end }}
     </div>
 
 
