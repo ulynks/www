@@ -1,37 +1,37 @@
 {{ define "main" }}
-
 <main>
-
   <div class="container py-5">
 
-    <h1 class="display-1">{{ .Title }}</h1>
+    <h1 class="display-1 pb-4">{{ .Title }}</h1>
 
-    <div>
+    {{ .Content }}
 
-      {{/* reverse so that the most recent event appears first  */}}
-      {{ range .Pages.Reverse }}
+    <div class="list-group">
+      {{ range .Pages }}
 
-      <h2 class="mt-5">{{ .LinkTitle }}&nbsp;<a href="{{ .RelPermalink }}"><i class="bi bi-box-arrow-up-right"></i></a>
-      </h2>
+      <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action" aria-current="true">
 
-      {{/* add the event date and location */}}
-      <p class="text-body-secondary py-3"><time
-          datetime="{{ .Params.event_date | dateFormat "2006-01-02" }}">{{ .Params.event_date | dateFormat "January 2, 2006" }}</time>
-        - {{ .Params.location }}
-      </p>
+        <div class="d-flex w-100 justify-content-between">
 
+          <h5 class="my-3">{{ .LinkTitle }}</h5>
+          <small class="mt-1 text-body-secondary">
+            {{ .Params.location }} - <time
+              datetime="{{ .Params.dateEvent | dateFormat "2006-01-02" }}">{{ .Params.dateEvent | dateFormat "January 2, 2006" }}</time>
+          </small>
 
-      {{/* add the tags  */}}
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
 
-      <br>
+        {{- /*
+            <img class="rounded float-end h-auto pb-2" width="150" src="{{ .Params.image }}">
+        */}}
 
-      {{/* add the event image  */}}
-      <img src="{{ .Params.image }}">
+        <p class="text-body-secondary mb-2">
+          {{ .Summary | safeHTML | truncate 200 }}
+        </p>
+      </a>
 
       {{ end }}
     </div>
-
 
   </div>
 </main>
