@@ -1,11 +1,12 @@
-+++
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
-draft = false
-description: Events
+---
+title: "{{ replace .File.ContentBaseName "-" " " | title }}"
+date: {{ .Date }}
 draft: false
-tags: ["django", "python", "nextjs", "javascript", "postgresql", "earma", "research support"]
+image: "/img/{{ .File.ContentBaseName }}.jpg"
+link: "https://www.example.com"
 event_date: "YYYY-MM-DD"
 location: "City, Country"
-image_url: "https://example.com/image.jpg"
-+++
+tags: ["django", "python", "nextjs", "javascript", "postgresql", "earma", "research support"]
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
