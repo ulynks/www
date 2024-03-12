@@ -6,7 +6,7 @@ draft: false
 tags: ["django", "python"]
 event_date: 2023-10-06
 location: Copenhagen, Denmark
-image_url: "https://2023.djangoday.dk/djangoday.svg"
+image: "https://2023.djangoday.dk/djangoday.svg"
 ---
 
 Django Day Copenhagen focuses on the Django web framework, where developers and enthusiasts gather to share knowledge, discuss best practices, showcase projects, and network with others in the Django community.
