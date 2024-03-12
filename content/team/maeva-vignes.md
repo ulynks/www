@@ -9,4 +9,6 @@ linkedin: https://www.linkedin.com/in/maevavignes/
 tags: ["Data Scientist"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Member of the Research Support and Policy Team at SDU RIO, my main goal is to support researchers and department research support offices at SDU to get more external funding. I focus mainly on helping to get funding from Europe (H2020 R&I and Societal Challenge pillars).
+
+From my past and ongoing experience I think I can define myself as an interdisciplinary worker with skills coming from sciences, funding strategy, data analysis, engineering, teaching and game development.

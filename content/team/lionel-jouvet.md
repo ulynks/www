@@ -8,4 +8,6 @@ linkedin: "https://www.linkedin.com/in/lioneljouvet"
 tags: ["Data Scientist"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Friendly Marine Biologist (Ph.D.) and Data Scientist with a strong background in applied marine biology, eco-immunology, and data analytics. Proficient in python and R programming, I enjoy collaborating on international research projects and working with diverse teams. As a creative maker with a passion for learning, I've developed skills in 3D printing, CAD, laser cutting, and woodwork. Through my data analytics expertise, I aim to uncover valuable insights, enhance internal controls, and optimize efficiency.
+
+Driven by a desire to foster innovation in both academia and industry, I'm proud to contribute to the development of cutting-edge technologies, tools, and techniques. As a dedicated educator and mentor, I find joy in sharing knowledge and promoting the ethical use of technology and data. Currently, I develop web apps and provide support to help researchers obtain funding and cooperation, applying my positive and creative mindset to make a meaningful impact.
