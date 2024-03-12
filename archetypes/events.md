@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: false
 image: "/img/{{ .File.ContentBaseName }}.jpg"
 link: "https://www.example.com"
-event_date: "YYYY-MM-DD"
+dateEvent: {{ .Date }}
 location: "City, Country"
 tags: ["django", "python", "nextjs", "javascript", "postgresql", "earma", "research support"]
 ---

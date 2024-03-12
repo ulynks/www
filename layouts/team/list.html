@@ -2,10 +2,10 @@
 <main>
   <div class="container py-5">
 
-    <h1 class="display-1">Discover our Team</h1>
+    <h1 class="display-1">{{ .Title }}</h1>
 
 
-    <div class="row">
+    <div class="row py-4">
 
       {{/* reverse so that the most recent event appears first  */}}
 
@@ -13,9 +13,9 @@
       {{ range $i, $page := .Pages.Reverse }}
       {{ $i = add $i 1 }}
 
-      {{ if eq ( mod $i 4 ) 1 }}
+      {{ if eq ( mod $i 5 ) 0 }}
     </div>
-    <div class="row pt-5">
+    <div class="row py-4">
       {{ end }}
 
       {{/* card with image, title, description and buttons  */}}

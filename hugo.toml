@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'uLynks'
 theme = 'ulynks'
 
+# Pluralize titles in lists using inflect
+pluralizeListTitles = false
+
 # Configure server
 # - https://gohugo.io/getting-started/configuration/#configure-server
 # - https://content-security-policy.com
@@ -40,6 +43,7 @@ theme = 'ulynks'
   [[params.social]]
     icon  = "linkedin"
     url   = "https://www.linkedin.com/company/ulynks"
+
 
 [[menus.main]]
 name = 'Team'

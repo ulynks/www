@@ -1,10 +1,10 @@
 ---
 title: EARMA
-date: 2023-03-08T21:44:00+01:00
+date: 2024-03-12T00:00:00+01:00
 description: Events
 draft: false
 tags: ["earma", "research support"]
-event_date: 2024-04-23
+dateEvent: 2024-04-23T00:00:00+01:00
 location: Odense, Denmark
 image: "https://earma.org/media/gallery/events-content_odense-microsite-banner-updated.jpg"
 ---
