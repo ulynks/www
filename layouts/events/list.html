@@ -11,7 +11,8 @@
       {{/* reverse so that the most recent event appears first  */}}
       {{ range .Pages.Reverse }}
 
-      <h2 class="mt-5"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <h2 class="mt-5">{{ .LinkTitle }}&nbsp;<a href="{{ .RelPermalink }}"><i class="bi bi-box-arrow-up-right"></i></a>
+      </h2>
 
       {{/* add the event date and location */}}
       <p class="text-body-secondary py-3"><time
