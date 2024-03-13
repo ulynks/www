@@ -51,7 +51,10 @@ $(function () {
    */
   $("a[href^='http']").each(function () {
     /* console.debug('_link', this.href); */
-    $(this).attr({ 'target': '_blank', 'rel': 'noopener noreferrer' })
+    let rel = $(this).attr('rel')
+    rel = 'noopener noreferrer' + (rel && !rel.match('noopener noreferrer') ? ' ' + rel : '')
+    /* console.debug('rel', rel); */
+    $(this).attr({ 'target': '_blank', 'rel': rel })
   })
 });
 
