@@ -2,9 +2,11 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
+
   <meta name="author" content="{{ $title }}">
   {{ $description := or .Description .Summary .Site.Params.description .Site.Params.subtitle }}
   <meta name="description" content="{{ $description }}">
@@ -17,9 +19,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="twitter:title" content="{{ $title }}">
-  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" type="text/css" href="/assets/main.css">
 </head>
