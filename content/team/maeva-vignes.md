@@ -1,7 +1,7 @@
 ---
 title: Maéva Vignes
 date: 2024-03-08T21:44:00+01:00
-description:
+description: Maéva Vignes
 draft: false
 image: /img/team/maeva-vignes.jpg
 github: https://github.com/maramusicos

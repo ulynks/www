@@ -1,7 +1,7 @@
 ---
 title: Training
 date: 2024-03-08T21:44:00+01:00
-description:
+description: Training
 draft: false
 ---
 

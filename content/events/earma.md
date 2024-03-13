@@ -1,7 +1,7 @@
 ---
 title: EARMA
 date: 2024-03-12T00:00:00+01:00
-description: Events
+description: EARMA
 draft: false
 tags: ["earma", "research support"]
 dateEvent: 2024-04-23T00:00:00+01:00

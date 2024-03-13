@@ -4,13 +4,13 @@
 
     <h1 class="display-1 pb-4">{{ .Title }}</h1>
 
-    <div class="row">
+    <div class="row row-cols-4">
 
       {{/* reverse so that the most recent event appears first  */}}
       {{ range .Pages.Reverse }}
 
       {{/* card with image, title, description and buttons  */}}
-      <div class="col">
+      <div class="col py-3">
         <div class="card h-100">
           <div class="card-header text-center">
             <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
