@@ -42,8 +42,6 @@ $(function () {
     $(this).addClass('active').attr('aria-current', 'page')
   })
 
-
-
   $('a[data-mail]').on('click', function () {
     window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
   })

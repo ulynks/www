@@ -29,12 +29,14 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary" href="#"
                 data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
-                data-subject="Sent From {{ .Site.Title }}' Website">Email</a></li>
+                data-subject="Sent From {{ .Site.Title }}' Website">eMail&nbsp;<i class="bi bi-envelope-fill"></i></a>
+            </li>
           </ul>
         </div>
 
         <div class="col text-end">
-          <img src="/img/logo-footer.png" alt="uLynks" class="img-fluid" width="200">
+          {{/* <img src="/img/logo-footer.png" alt="uLynks" class="img-fluid" width="200"> */}}
+          <img src="/img/logo/ulynks-logo-color.svg" alt="uLynks" height="150">
         </div>
       </div>
 
@@ -42,7 +44,7 @@
         <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           {{- range site.Params.social }}
-          <li class="ms-3"><a class="link-body-emphasis" href="{{ .url }}" title="Visit {{ .icon }} account"><i
+          <li class="ms-3"><a class="link-body-emphasis" href="{{ .url }}" rel="me" title="Visit {{ .icon }} account"><i
                 class="bi bi-{{ .icon }}"></i></a></li>
           {{- end }}
         </ul>
