@@ -1,7 +1,7 @@
 ---
 title: SDU RIO Analytics Funding Web Apps
 date: 2024-03-08T21:44:00+01:00
-description: Portfolio
+description: SDU RIO Analytics Funding Web Apps
 draft: false
 image: /img/portfolio/white-sdu.png
 link: https://sdurioanalytics.sdu.dk

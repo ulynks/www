@@ -10,7 +10,8 @@
     content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ else }}{{ with .Site.Params.subtitle }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}">
   {{ hugo.Generator }}
   <meta name="twitter:card" content="summary">
-  <meta property="og:description" content="{{ .Site.Params.subtitle }}">
+  <meta property="og:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ else }}{{ with .Site.Params.subtitle }}{{ . }}{{ end }}{{ end }}{{ end }}{{ end }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="{{ $title }}">
   <meta property="og:title" content="{{ $title }}">

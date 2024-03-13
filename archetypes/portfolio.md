@@ -2,6 +2,7 @@
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: false
+description: "{{ replace .File.ContentBaseName "-" " " | title }}"
 image: "/img/{{ .File.ContentBaseName }}.jpg"
 link: "https://www.example.com"
 tags: ["content"]

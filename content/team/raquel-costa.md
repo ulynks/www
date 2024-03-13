@@ -1,7 +1,7 @@
 ---
 title: Raquel Costa
 date: 2024-03-08T21:44:00+01:00
-description:
+description: Raquel Costa
 draft: false
 image: /img/team/raquel-costa.jpg
 github: https://github.com/Raquel-Costa

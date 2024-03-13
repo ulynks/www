@@ -1,7 +1,7 @@
 ---
 title: Luisa Zeppelin
 date: 2024-03-08T21:44:00+01:00
-description:
+description: Luisa Zeppelin
 draft: false
 image: /img/team/luisa-zeppelin.jpg
 github: https://github.com/luzep
