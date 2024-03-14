@@ -4,7 +4,7 @@
 
     <h1 class="display-1 pb-4">{{ .Title }}</h1>
 
-    <div class="row row-cols-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
       {{/* reverse so that the most recent event appears first  */}}
       {{ range .Pages.Reverse }}
@@ -15,7 +15,7 @@
           <div class="card-header text-center">
             <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
           </div>
-          <div class="card-body overflow-y-scroll h-50">
+          <div class="card-body h-50">
             <h2 class="card-title">{{ .LinkTitle }}</h2>
             <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
           </div>

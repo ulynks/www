@@ -3,7 +3,7 @@ title: WaveLinks
 date: 2024-03-08T21:44:00+01:00
 description: Wavelinks
 draft: false
-image: /img/portfolio/white-wavelinks.png
+image: /portfolio/white-wavelinks.png
 link: https://www.wavelinks.eu
 ---
 

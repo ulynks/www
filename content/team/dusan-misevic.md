@@ -3,7 +3,7 @@ title: "Dusan Misevic"
 date: 2024-03-12T19:25:17+01:00
 draft: false
 description: "Dusan Misevic"
-image: "/img/team/dusan-misevic.jpg"
+image: "/team/dusan-misevic.jpg"
 github: "https://github.com/dule123"
 linkedin: "https://www.linkedin.com/in/dusan-m"
 tags: ["Data Scientist"]
