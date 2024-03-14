@@ -4,7 +4,7 @@
 
     <h1 class="display-1">{{ .Title }}</h1>
 
-    <div class="row row-cols-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
 
       {{/* reverse so that the most recent event appears first  */}}
 
@@ -18,7 +18,7 @@
           <div class="card-header text-center p-0">
             <img class="card-img-top rounded" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
           </div>
-          <div class="card-body overflow-y-scroll">
+          <div class="card-body">
             <h2 class="card-title">{{ .LinkTitle }}</h2>
             <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
           </div>

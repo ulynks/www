@@ -3,7 +3,7 @@ title: "Lionel Jouvet"
 date: 2024-03-12T19:21:40+01:00
 draft: false
 description: "Lionel Jouvet"
-image: "/img/team/lionel-jouvet.jpg"
+image: "/team/lionel-jouvet.jpg"
 github: "https://github.com/Ecolio"
 linkedin: "https://www.linkedin.com/in/lioneljouvet"
 tags: ["Data Scientist"]

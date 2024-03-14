@@ -3,7 +3,7 @@ title: Maéva Vignes
 date: 2024-03-08T21:44:00+01:00
 description: Maéva Vignes
 draft: false
-image: /img/team/maeva-vignes.jpg
+image: /team/maeva-vignes.jpg
 github: https://github.com/maramusicos
 linkedin: https://www.linkedin.com/in/maevavignes/
 tags: ["Data Scientist"]

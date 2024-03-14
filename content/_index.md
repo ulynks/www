@@ -5,7 +5,7 @@ description: "Our Purpose"
 draft: false
 ---
 
-<!-- {{< text-image title="Our purpose" text="Some text explaining why we do what we do, what makes us different and unique, why should people ask for our services and contact us" source="/img/home.png" url="/team" button="Get to know us">}}
+<!-- {{< text-image title="Our purpose" text="Some text explaining why we do what we do, what makes us different and unique, why should people ask for our services and contact us" source="/home/home.png" url="/team" button="Get to know us">}}
 
 ## How we can help you
 
@@ -15,11 +15,11 @@ draft: false
 
 ## Brands that trust us
 
-{{< figure src="img/white-sdu.png" width=50 alt="SDU" >}}
-{{< figure src="img/white-aa.png" width=50 alt="Aalborg" >}}
-{{< figure src="img/white-banos.png" width=50 alt="Blue Mission BANOS" >}}
-{{< figure src="img/white-prep4blue.png" width=50 alt="PREP4BLUE" >}}
-{{< figure src="img/white-bmaa.png" width=50 alt="Blue Mission AA" >}}
-{{< figure src="img/white-yerun.png" width=50 alt="Yerun" >}}
+{{< figure src="/home/white-sdu.png" width=50 alt="SDU" >}}
+{{< figure src="/home/white-aa.png" width=50 alt="Aalborg" >}}
+{{< figure src="/home/white-banos.png" width=50 alt="Blue Mission BANOS" >}}
+{{< figure src="/home/white-prep4blue.png" width=50 alt="PREP4BLUE" >}}
+{{< figure src="/home/white-bmaa.png" width=50 alt="Blue Mission AA" >}}
+{{< figure src="/home/white-yerun.png" width=50 alt="Yerun" >}}
 
 {{< button url="/portfolio" title="See our portfolio">}} -->
