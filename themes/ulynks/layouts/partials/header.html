@@ -15,15 +15,15 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="nav nav-underline me-3">
+          <ul class="nav nav-underline">
             {{- range site.Menus.main }}
-            <li class="nav-item me-3">
+            <li class="nav-item ms-3">
               <a class="nav-link" href="{{ .URL }}">
                 {{ .Name }}
               </a>
             </li>
             {{- end }}
-            <li class="nav-item me-3"><a class="btn btn-primary" href="#"
+            <li class="nav-item ms-3"><a class="btn btn-primary" href="#"
                 data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
                 data-subject="Sent From {{ .Site.Title }}' Website" role="button">Contact Us</a></li>
           </ul>

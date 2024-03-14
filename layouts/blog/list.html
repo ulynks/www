@@ -15,9 +15,9 @@
 
           <h5 class="my-3">{{ .LinkTitle }}</h5>
           <small class="mt-1 text-body-secondary">
-            {{ $dateMachine := .Params.dateEvent | time.Format "2024-02-20T00:00:45+01:00" }}
-            {{ $dateHuman := .Params.dateEvent | time.Format ":date_long" }}
-            {{ .Params.location }} - <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{ $dateMachine := .Date | time.Format "2024-02-20T00:00:45+01:00" }}
+            {{ $dateHuman := .Date | time.Format ":date_long" }}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
           </small>
 
         </div>

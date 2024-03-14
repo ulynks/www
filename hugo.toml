@@ -45,6 +45,17 @@ pluralizeListTitles = false
     url   = "https://www.linkedin.com/company/ulynks"
 
 
+[permalinks]
+blog = "/blog/:year/:month/:day/:title/"
+
+
+# Allow HTML in Markdown files in Hugo
+# Markdown is usually a superset of html after all.
+# “For any markup that is not covered by Markdown’s syntax, you simply use HTML itself”.
+# If you trust yourself not to break your own site it can be useful to undo that default.
+[markup.goldmark.renderer]
+unsafe = true
+
 [[menus.main]]
 name = 'Team'
 pageRef = '/team'
@@ -64,6 +75,11 @@ weight = 3
 name = 'Events'
 pageRef = '/events'
 weight = 4
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 5
 
 [module]
   [module.hugoVersion]
