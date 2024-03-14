@@ -3,7 +3,7 @@ title: Connect by YERUN
 date: 2024-03-08T21:44:00+01:00
 description: Connect by YERUN
 draft: false
-image: /portfolio/white-connect.png
+image: /portfolio/white-connect.svg
 link: https://www.connect-by-yerun.eu
 ---
 

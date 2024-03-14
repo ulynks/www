@@ -16,73 +16,85 @@
 
     <div class="mt-5 mb-5">
       <h1 class="fw-bold mt-4 mb-5">How we can help you</h1>
-      <div class="row">
-        <div class="col-md-3">
+
+
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex text-center align-items-center">
+
+        {{ $_expertise := slice
+          (dict
+            "icon" "bar-chart"
+            "title" "Data Analysis"
+            "text" "We offer data analysis consulting services to research support teams"
+          )
+          (dict
+            "icon" "signpost-split"
+            "title" "AI"
+            "text" "We keep up with the latest advancements of AI and can help you take the most out of it"
+          )
+          (dict
+            "icon" "laptop"
+            "title" "Web Apps"
+            "text" "We develop web applications for research support and knowledge sharing"
+          )
+          (dict
+            "icon" "mortarboard-fill"
+            "title" "Training"
+            "text" "We offer training to related to AI and data analysis to non tech professionals"
+          )
+        }}
+        {{ range $_expertise }}
+        <div class="col py-3">
           <div class="card">
-            <div class="card-body text-center">
-              <i class="bi bi-bar-chart"></i>
-              <h5 class="card-title fw-bold">Data Analysis</h5>
-              <p class="card-text">We offer data analysis consulting services to research support teams</p>
+            <div class="card-header">
+              <h1><i class="bi bi-{{ .icon }}"></i></h1>
+            </div>
+            <div class="card-body ">
+              <h5 class="card-title fw-bold">{{ .title }}</h5>
+              <p class="card-text">{{ .text }}</p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class="bi bi-laptop"></i>
-              <h5 class="card-title fw-bold">Web Apps</h5>
-              <p class="card-text">We develop web applications for research support and knowledge sharing</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class="bi bi-signpost-split"></i>
-              <h5 class="card-title fw-bold">AI</h5>
-              <p class="card-text">We keep up with the latest advancements of AI and can help you take the most out of
-                it
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <i class="bi bi-mortarboard-fill"></i>
-              <h5 class="card-title fw-bold">Training</h5>
-              <p class="card-text">We offer training to related to AI and data analysis to non tech professionals</p>
-            </div>
-          </div>
-        </div>
+        {{ end }}
       </div>
       <p><a class="btn btn-primary mt-5" href="/expertise" role="button">See all expertise</a></p>
     </div>
 
     <div class="mt-5 mb-5">
       <h1 class="fw-bold">Brands that trust us</h1>
-      <table class="w-100">
-        <tr>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-sdu.png" alt="SDU">
-          </td>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-aa.png" alt="Aalborg">
-          </td>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-yerun.png" alt="YERUN">
-        </tr>
-        <tr>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-prep4blue.png"
-              alt="PREP4BLUE">
-          </td>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-banos.png"
-              alt="Blue Mission BANOS">
-          </td>
-          <td class="text-center align-middle p-5"><img class="img-fluid" src="/home/white-bmaa.png"
-              alt="Blue Mission AA">
-          </td>
-          </td>
-        </tr>
-      </table>
-
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center d-flex align-items-center">
+        {{ $_brand := slice
+          (dict
+            "src" "sdu"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "aa"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "yerun"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "prep4blue"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "banos"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "bmaa"
+            "href" "www.sdu.dk/en"
+          )
+        }}
+        {{ range $_brand }}
+        <div class="col py-3">
+          <a href="https://{{ .href }}"><img class="img-fluid" src="/home/white-{{ .src }}.svg" alt="{{ .src }}"></a>
+        </div>
+        {{ end }}
+      </div>
       <p><a class="btn btn-primary mt-5" href="/portfolio" role="button">See our portfolio</a></p>
     </div>
   </div>
