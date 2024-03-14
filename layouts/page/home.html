@@ -3,14 +3,18 @@
   <div class="container py-5">
 
     <div class="row align-items-center">
-      <div class="col">
-        <h1 class="fw-bold mb-5">Our purpose</h1>
-        <p>Some text explaining why we do what we do, what makes us different and unique, why should people ask for our
-          services and contact us</p>
+      <div class="col-sm-8 py-3">
+        <h1 class="fw-bold mb-4">Our purpose</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
         <a class="btn btn-primary mt-2" href="/team" role="button">Get to know us</a>
       </div>
-      <div class="col">
-        <img src="/home/home.png" alt="uLynks" class="img-fluid" width="800">
+      <div class="col-sm-4 py-3">
+        <img src="/home/home.png" alt="uLynks" class="img-fluid">
       </div>
     </div>
 
@@ -19,7 +23,7 @@
 
 
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex text-center align-items-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center align-items-center">
 
         {{ $_expertise := slice
           (dict
@@ -46,10 +50,8 @@
         {{ range $_expertise }}
         <div class="col py-3">
           <div class="card">
-            <div class="card-header">
-              <h1><i class="bi bi-{{ .icon }}"></i></h1>
-            </div>
-            <div class="card-body ">
+            <div class="card-body">
+              <p class="fs-1 mb-0"><i class="bi bi-{{ .icon }}"></i></p>
               <h5 class="card-title fw-bold">{{ .title }}</h5>
               <p class="card-text">{{ .text }}</p>
             </div>
@@ -62,7 +64,7 @@
 
     <div class="mt-5 mb-5">
       <h1 class="fw-bold">Brands that trust us</h1>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center d-flex align-items-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center align-items-center">
         {{ $_brand := slice
           (dict
             "src" "sdu"

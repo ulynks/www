@@ -11,6 +11,8 @@ Growing on Fyn, Denmark 🇩🇰
 
 ## Usage
 
+How to create new pages under the `team` section 👇
+
 ```bash
 for _who in "alexander-dernild" "dusan-misevic" "lionel-jouvet" "julien-vieillefont"; do
   hugo new content "team/${_who}.md"
@@ -18,3 +20,11 @@ done
 ```
 
 :point_right: An [archetype](https://gohugo.io/content-management/archetypes/#overview) is a template for new content.
+
+How to create new `blog` posts 👇
+
+```bash
+for _who in "test-1" "test-2"; do
+  hugo new content "blog/${_who}.md"
+done
+```
