@@ -5,7 +5,7 @@ description: "Our Purpose"
 draft: false
 ---
 
-<!-- {{< text-image title="Our purpose" text="Some text explaining why we do what we do, what makes us different and unique, why should people ask for our services and contact us" source="/home/home.png" url="/team" button="Get to know us">}}
+<!-- {{< text-image title="Our purpose" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">}}
 
 ## How we can help you
 

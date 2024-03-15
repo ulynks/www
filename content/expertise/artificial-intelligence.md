@@ -5,4 +5,4 @@ description: Artificial Intelligence
 draft: false
 ---
 
-Some text explaining why we do AI and which type of AI. Explain the type of clients/people we can help and how. Give motivation for people to contact us
+Welcome to our AI page. We specialize in AI technologies, particularly NLP, for applications like data categorization, pattern identification, chatbot interaction, and local Language Models deployment. Beyond technical applications, we're committed to AI education. We conduct GDPR-compliant workshops for research managers, engage in vertical networking across departments, and participate in conferences. Our aim is to foster a collaborative environment where AI is leveraged responsibly and ethically.
