@@ -12,7 +12,7 @@
         datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
     </p>
 
-    {{ .Content }}
+    {{ .Content | safeHTML }}
 
   </div>
 </main>

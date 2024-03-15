@@ -1,7 +1,7 @@
 ---
-title: Artificial Intelligence
+title: AI
 date: 2024-03-08T21:44:00+01:00
-description: Artificial Intelligence
+description: We keep up with the latest advancements of Artificial Intelligence and can help you take the most out of it
 draft: false
 ---
 
