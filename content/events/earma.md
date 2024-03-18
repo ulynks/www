@@ -3,7 +3,7 @@ title: EARMA
 date: 2024-03-12T00:00:00+01:00
 description: EARMA
 draft: false
-tags: ["earma", "research support"]
+tags: ["earma", "research support", "AI", "Artificial Intelligence"]
 dateEvent: 2024-04-23T00:00:00+01:00
 location: Odense, Denmark
 image: "https://earma.org/media/gallery/events-content_odense-microsite-banner-updated.jpg"
