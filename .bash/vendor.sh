@@ -25,7 +25,7 @@ Update ${_dest}...
 
 EOF
   for _pack in "${_packages[@]}"; do
-    cp -pvf "./node_modules/${_pack}" "./${_dest}/"
+    cp -pvf "./node_modules/${_pack}"* "./${_dest}/"
     _html+=$'\n'"<script src=\"${_dest##*/}/${_pack##*/}\"></script>"
   done
   cat <<EOF
