@@ -16,15 +16,18 @@
   {{ end }}
 
   <div class="card-group">
-    <a class="link-dark" href="{{ .RelPermalink }}">
-      <div class="card h-100">
-        <div class="card-body">
-          <p class="fs-1 mb-0"><i class="bi bi-{{ $icon }}"></i></p>
-          <h5 class="card-title fw-bold">{{ .LinkTitle }}</h5>
-          <p class="card-text">{{ .Description | safeHTML | truncate 150 }}</p>
-        </div>
+    <!-- <a class="link-dark" href="{{ .RelPermalink }}"> -->
+    <div class="card h-100">
+      <div class="card-body">
+        <p class="fs-1 mb-0"><i class="bi bi-{{ $icon }}"></i></p>
+        <h5 class="card-title fw-bold">{{ .LinkTitle }}</h5>
+        <p class="card-text">{{ .Description | safeHTML | truncate 150 }}</p>
       </div>
-    </a>
+      <div class="card-footer bg-transparent border-dark">
+        <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button">Read more</a>
+      </div>
+    </div>
+    <!-- </a> -->
   </div>
 
   {{ end }}
