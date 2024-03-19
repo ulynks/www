@@ -71,15 +71,15 @@ $(function () {
   /**
    * Team img hover
    */
-  $('.team-hover').on('mouseenter', function () {
+  $('.img-hover').on('mouseenter', function () {
     let src = $(this).attr('src')
     src = src.replace(/([^.]+).([^.]+)$/, '$1-hover.$2')
-    console.debug('src', src);
+    console.debug('mouseenter src', src);
     $(this).attr({ 'src': src })
   }).on('mouseleave', function () {
     let src = $(this).attr('src')
     src = src.replace('-hover', '')
-    console.debug('src', src);
+    console.debug('mouseleave src', src);
     $(this).attr({ 'src': src })
   })
 });
