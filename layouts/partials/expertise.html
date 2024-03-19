@@ -16,7 +16,8 @@
   {{ end }}
 
   <div class="card-group">
-    <a class="link-dark" href="{{ .RelPermalink }}">
+    <a class="link-dark" href="{{ .RelPermalink }}" data-bs-toggle="tooltip"
+      data-bs-title="Open our page on {{ .LinkTitle }}">
       <div class="card h-100">
         <div class="card-body">
           <p class="fs-1 mb-0"><i class="bi bi-{{ $icon }}"></i></p>

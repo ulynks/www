@@ -56,6 +56,18 @@ $(function () {
     /* console.debug('rel', rel); */
     $(this).attr({ 'target': '_blank', 'rel': rel })
   })
+
+
+
+  /**
+   * Tooltips
+   * https://stackoverflow.com/a/22569369/2477854
+   */
+  // $('[data-bs-toggle="tooltip"]').tooltip()
+  $('body').tooltip({
+    selector: '[data-bs-toggle="tooltip"]'
+  })
+
 });
 
 /**
