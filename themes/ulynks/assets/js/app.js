@@ -69,20 +69,76 @@ $(function () {
   })
 
   /**
-   * Team img hover
+   * img-hover
    */
   $('.img-hover').on('mouseenter', function () {
-    let src = $(this).attr('src')
-    src = src.replace(/([^.]+).([^.]+)$/, '$1-hover.$2')
-    console.debug('mouseenter src', src);
-    $(this).attr({ 'src': src })
+    // let src = $(this).attr('src')
+    // src = src.replace(/([^.]+).([^.]+)$/, '$1-hover.$2')
+    // console.debug('mouseenter src', src);
+    // $(this).attr({ 'src': src })
+    changeImageSourceHover($(this))
   }).on('mouseleave', function () {
-    let src = $(this).attr('src')
-    src = src.replace('-hover', '')
-    console.debug('mouseleave src', src);
+    const src = $(this).attr('data-src') || $(this).attr('src')
+    // src = src.replace('-hover', '')
+    // console.debug('mouseleave src', src);
     $(this).attr({ 'src': src })
   })
 });
+
+
+/**
+ * pathExists
+ * @param {*} url
+ * @param {*} callback
+ * XMLHttpRequest: response property
+ * see: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response#examples
+ */
+function pathExists(url, callback) {
+  const xhr = new XMLHttpRequest()
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      callback(xhr.status < 400)
+    }
+  }
+  xhr.open('HEAD', url)
+  xhr.send()
+}
+
+
+/**
+ * changeImageSourceHover
+ * @param {*} obj = $(this)
+ * @returns
+ */
+function changeImageSourceHover(obj) {
+  const hover = obj.attr('data-hover') || false
+  if (hover) {
+    obj.attr({ 'src': hover })
+    return
+  }
+  const src = obj.attr('src')
+  const _src = src.replace(/([^.]+).([^.]+)$/, '$1-hover')
+  for (const _type of ["gif", "jpg", "png"]) {
+    const _hover = _src + "." + _type
+    pathExists(_hover, function (result) {
+      // console.debug(_hover, result);
+      if (!result) return
+      obj.attr({
+        'src': _hover,
+        'data-hover': _hover,
+        'data-src': src
+      })
+    });
+  }
+  if (obj.attr('data-hover')) return
+  obj.attr({
+    'src': src,
+    'data-hover': src
+  })
+}
+
+
+
 
 /**
  * Freely Inspired by
