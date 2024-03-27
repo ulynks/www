@@ -16,17 +16,17 @@
       "runOptions": {
         "runOn": "folderOpen"
       },
-      "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server."
+      "detail": "Start Hugo’s development server to view the site. Press Ctrl + C to stop Hugo’s development server"
     },
     {
       "label": "assets",
       "command": "yarn run assets",
-      "detail": "Build assets."
+      "detail": "Build assets"
     },
     {
       "label": "yarn",
       "command": "npm run yarn-update",
-      "detail": "Update dependencies."
+      "detail": "Update dependencies"
     },
   ]
 }
