@@ -2,7 +2,7 @@
 #
 # brew install git-lfs
 # git lfs install
-# git lfs track {"*.gif","*.jpg","*.pdf","*.png","*.svg",}
+# git lfs track {"*.gif","*.jpg","*.pdf","*.png","*.svg"}
 #
 # Documentation
 # ------------
