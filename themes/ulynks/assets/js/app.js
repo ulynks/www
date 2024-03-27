@@ -118,7 +118,7 @@ function changeImageSourceHover(obj) {
   }
   const src = obj.attr('src')
   const _src = src.replace(/([^.]+).([^.]+)$/, '$1-hover')
-  for (const _type of ["gif", "jpg", "png"]) {
+  for (const _type of ["gif", "jpg", "png", "svg"]) {
     const _hover = _src + "." + _type
     pathExists(_hover, function (result) {
       // console.debug(_hover, result);
