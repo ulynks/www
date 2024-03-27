@@ -1,0 +1,87 @@
+baseURL = 'https://www.ulynks.io/'
+languageCode = 'en-us'
+title = 'uLynks'
+theme = 'ulynks'
+
+# Pluralize titles in lists using inflect
+pluralizeListTitles = false
+
+# Configure server
+# - https://gohugo.io/getting-started/configuration/#configure-server
+# - https://content-security-policy.com
+
+[server]
+[[server.headers]]
+  for = '/**'
+  [server.headers.values]
+    Content-Security-Policy = """
+    default-src 'self';
+    connect-src 'self' https://eu.umami.is;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' https://*;
+    script-src 'self' https://eu.umami.is;
+    style-src 'self' https://fonts.googleapis.com
+    """
+    Referrer-Policy = 'strict-origin-when-cross-origin'
+    X-Content-Type-Options = 'nosniff'
+    X-Frame-Options = 'DENY'
+    X-XSS-Protection = '1; mode=block'
+
+[params]
+  subtitle = 'Growing on Fyn, Denmark 🇩🇰'
+  umami = '3cf42fbf-5ff7-4ba7-b4d1-607641c5b4e8'
+  mainWebsite = 'https://www.ulynks.io/'
+  [params.contact]
+    email = 'contact@ulynks.io'
+    phone = ''
+  [[params.social]]
+    icon  = "github"
+    url   = "https://github.com/ulynks"
+  [[params.social]]
+    icon  = "mastodon"
+    url   = "https://mastodon.social/@ulynks"
+  [[params.social]]
+    icon  = "linkedin"
+    url   = "https://www.linkedin.com/company/ulynks"
+
+
+[permalinks]
+blog = "/blog/:year/:month/:day/:title/"
+
+
+# Allow HTML in Markdown files in Hugo
+# Markdown is usually a superset of html after all.
+# “For any markup that is not covered by Markdown’s syntax, you simply use HTML itself”.
+# If you trust yourself not to break your own site it can be useful to undo that default.
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menus.main]]
+name = 'Team'
+pageRef = '/team'
+weight = 1
+
+[[menus.main]]
+name = 'Portfolio'
+pageRef = '/portfolio'
+weight = 2
+
+[[menus.main]]
+name = 'Expertise'
+pageRef = '/expertise'
+weight = 3
+
+[[menus.main]]
+name = 'Events'
+pageRef = '/events'
+weight = 4
+
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 5
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

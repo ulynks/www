@@ -1,0 +1,55 @@
+{{ define "main" }}
+<main>
+  <div class="container py-5">
+
+    <h1 class="display-1 pb-4">{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <div class="list-group">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action p-0">
+
+        {{- /*
+        <div class="d-flex w-100 justify-content-between">
+
+        <h5 class="my-3">{{ .LinkTitle }}</h5>
+        <small class="mt-1 text-body-secondary">
+          {{ $dateMachine := .Params.dateEvent | time.Format "2024-02-20T00:00:45+01:00" }}
+          {{ $dateHuman := .Params.dateEvent | time.Format ":date_long" }}
+          {{ .Params.location }} - <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </small>
+
+    </div>
+
+    <img class="rounded float-end h-auto pb-2" width="150" src="{{ .Params.image }}">
+
+    <p class="text-body-secondary mb-2">
+      {{ .Summary | safeHTML | truncate 200 }}
+    </p>
+    */}}
+
+    <div class="row">
+      <div class="col-md-2">
+        <img src="{{ .Params.image }}" alt="{{ .LinkTitle }}" width="200" height="150">
+      </div>
+      <div class="col-md-10">
+        <small class="float-end p-2 text-body-secondary">
+          {{ $dateMachine := .Params.dateEvent | time.Format "2024-02-20T00:00:45+01:00" }}
+          {{ $dateHuman := .Params.dateEvent | time.Format ":date_long" }}
+          {{ .Params.location }} - <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </small>
+        <h5 class="pt-3">{{ .LinkTitle }}</h5>
+        <p class="text-body-secondary py-2">
+          {{ .Summary | safeHTML | truncate 200 }}
+        </p>
+      </div>
+    </div>
+
+    </a>
+    {{ end }}
+  </div>
+
+  </div>
+</main>
+{{ end }}

@@ -1,0 +1,10 @@
+<div class="row align-items-center">
+  <div class="col">
+    <h1>{{ .Get "title" }}</h1>
+    <p>{{ .Get "text" }}</p>
+    <a class="btn btn-primary" href="{{ .Get "url" }}" role="button">{{ .Get "button" }}</a>
+  </div>
+  <div class="col">
+    <img src="{{ .Get "source" }}" alt="uLynks" class="img-fluid" width="800">
+  </div>
+</div>

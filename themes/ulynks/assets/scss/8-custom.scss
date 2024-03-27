@@ -1,0 +1,11 @@
+/* img in post can exceed the size of the page */
+img {
+  max-width: 100%
+}
+
+// Custom tooltips
+// see: https://getbootstrap.com/docs/5.3/components/tooltips/#custom-tooltips
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-orange);
+  --bs-tooltip-color: var(--bs-black);
+}

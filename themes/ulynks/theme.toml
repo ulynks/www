@@ -1,0 +1,32 @@
+name = 'uLynks'
+license = 'EUPL-1.2'
+licenselink = 'https://github.com/ulynks/www/LICENSE'
+description = 'Growing on Fyn, Denmark 🇩🇰'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/ulynks/www'
+
+# If you have a running demo of the theme
+demosite = 'https://ulynks.github.io/www'
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has multiple authors
+authors = [
+  {name = 'JV conseil', homepage = 'https://github.com/JV-conseil'},
+  {name = 'Raquel Costa', homepage = 'https://github.com/Raquel-Costa'},
+  {name = 'luzep', homepage = 'https://github.com/luzep'}
+]
+
+# If the theme has a single author
+# [author]
+#  name = 'Your name'
+#  homepage = 'Your website'
+
+# If porting an existing theme
+# [original]
+#  author = 'Name of original author'
+#  homepage = 'Website of original author'
+#  repo = 'https://github.com/owner/repo'

@@ -1,0 +1,36 @@
+<!-- Start Navbar -->
+<header>
+  <div class="container-fluid bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+
+        <a class="navbar-brand py-0" href="/" title="Home">
+          <img src="/logo/ulynks-logo-orange-horizontal.svg" alt="{{ .Site.Title }}" class="img-fluid" width="200">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="nav nav-underline">
+            {{- range site.Menus.main }}
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="{{ .URL }}">
+                {{ .Name }}
+              </a>
+            </li>
+            {{- end }}
+            <li class="nav-item ms-3"><a class="btn btn-primary" href="#"
+                data-mail="{{ .Site.Title }} <{{ .Site.Params.contact.email }}>"
+                data-subject="Sent From {{ .Site.Title }}' Website" role="button">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</header>
+<!-- End Navbar -->

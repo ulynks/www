@@ -1,0 +1,32 @@
+{{- /* Generate a Grid cards from expertise pages */}}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 text-center">
+
+  {{/* reverse so that the most recent event appears first  */}}
+  {{ $pages := where .Site.RegularPages.Reverse "Section" "expertise" }}
+  {{ range $pages }}
+
+  {{ $icon := "bar-chart" }}
+  {{ if in .LinkTitle "AI" }}
+  {{ $icon = "signpost-split" }}
+  {{ else if in .LinkTitle "Apps" }}
+  {{ $icon = "laptop" }}
+  {{ else if in .LinkTitle "Training" }}
+  {{ $icon = "mortarboard-fill" }}
+  {{ end }}
+
+  <div class="card-group py-2">
+    <a class="link-dark" href="{{ .RelPermalink }}" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+      data-bs-title="Open our page on {{ .LinkTitle }}">
+      <div class="card h-100">
+        <div class="card-body">
+          <p class="fs-1 mb-0"><i class="bi bi-{{ $icon }}"></i></p>
+          <h5 class="card-title fw-bold">{{ .LinkTitle }}</h5>
+          <p class="card-text">{{ .Description | safeHTML | truncate 150 }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  {{ end }}
+</div>

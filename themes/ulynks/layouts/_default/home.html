@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  <div class="container py-5">
+
+    {{ .Content }}
+    {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+    {{ end }}
+
+  </div>
+</main>
+{{ end }}
