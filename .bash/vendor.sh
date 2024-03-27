@@ -13,7 +13,7 @@ declare -ix DEBUG
 
 DEBUG=0
 
-_sdu_::cp_vendor() {
+_ulynks_::cp_vendor() {
   local _dest="static/vendor" _html="" _pack
   local -a _packages=(
     "jquery/dist/jquery.min.js"
@@ -36,4 +36,4 @@ ${_html}
 EOF
 }
 
-_sdu_::cp_vendor
+_ulynks_::cp_vendor

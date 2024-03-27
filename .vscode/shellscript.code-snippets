@@ -33,11 +33,11 @@
     },
     "function": {
         "prefix": [
-            "_sdu_::",
+            "_ulynks_::",
             "function"
         ],
         "body": [
-            "_sdu_::${1:generic_function}() {",
+            "_ulynks_::${1:generic_function}() {",
             "\tlocal _arg=\"\\${1:-\"something\"}\"",
             "\tif cmd; then",
             "\t\t_arg=\"something else\"",
@@ -48,7 +48,7 @@
             "}",
         ],
         "description": [
-            "This defines a generic function _sdu_::generic_function() {}.\n",
+            "This defines a generic function _ulynks_::generic_function() {}.\n",
             "The reserved word function is optional.\n",
             "If the function reserved word is supplied, the parentheses are optional.\n",
             "1. Recommended way:\n",
