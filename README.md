@@ -28,3 +28,5 @@ for _who in "test-1" "test-2"; do
   hugo new content "blog/${_who}.md"
 done
 ```
+
+This is Luisa signing, yayy!
