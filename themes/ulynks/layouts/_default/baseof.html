@@ -3,6 +3,7 @@
   {{- partial "head.html" . -}}
 
   <body class="d-flex flex-column h-100">
+    {{- partial "color-mode-switch.html" . -}}
     {{- partial "header.html" . -}}
     {{- block "main" . }}{{- end }}
     {{- partial "footer.html" . -}}
