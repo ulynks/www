@@ -5,8 +5,7 @@
 // import * as bootstrap from 'bootstrap'
 
 const SITE = {
-  title: "uLynks",
-  email: "contact@ulynks.io",
+  title: "uLynks"
 }
 
 $(function () {
@@ -55,9 +54,17 @@ $(function () {
   $('a[href^="mailto:"]').on('click', function () {
     /* window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n") */
 
-    let link = 'mailto:' + encodeURIComponent(SITE.email)
+    let link = $(this).attr('href').trim()
+    link = DOMPurify.sanitize(link)
+    link = link.replace(/mailto:/g, '')
+
+    // console.debug("link ", link)
+
+    link = 'mailto:' + encodeURIComponent(link)
     link += '?subject=' + encodeURIComponent("Sent From " + SITE.title + " Website")
     link += '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
+
+    // console.debug("link ", link)
 
     window.location = link
 
