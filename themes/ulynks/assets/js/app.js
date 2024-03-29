@@ -54,13 +54,13 @@ $(function () {
   $('a[href^="mailto:"]').on('click', function () {
     /* window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n") */
 
-    let link = $(this).attr('href').trim()
-    link = DOMPurify.sanitize(link)
-    link = link.replace(/mailto:/g, '')
+    let email = $(this).attr('href').trim()
+    email = DOMPurify.sanitize(email)
+    email = email.replace(/mailto:/g, '')
 
-    // console.debug("link ", link)
+    // console.debug("email ", email)
 
-    link = 'mailto:' + encodeURIComponent(link)
+    let link = 'mailto:' + encodeURIComponent(email)
     link += '?subject=' + encodeURIComponent("Sent From " + SITE.title + " Website")
     link += '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
 
