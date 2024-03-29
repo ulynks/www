@@ -31,11 +31,12 @@ EOF
   done
   cat <<EOF
 
-Open
-./themes/ulynks/layouts/partials/script.html
-
-And insert these lines to source your scripts 👇
+Copy these lines to source your scripts 👇
 ${_html}
+
+And past them into 👇
+
+./themes/ulynks/layouts/partials/script.html
 
 EOF
 }
