@@ -2958,6 +2958,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dompurify@npm:^3.0.11":
+  version: 3.0.11
+  resolution: "dompurify@npm:3.0.11"
+  checksum: 10c0/38740deed057da8076e85026853635312a6720a21430218a85875e5f43e453c78637d93aa08c744460b0e91c652b06c736efb481c408a8f9c81894d8f76e0de1
+  languageName: node
+  linkType: hard
+
 "domutils@npm:^3.0.1":
   version: 3.1.0
   resolution: "domutils@npm:3.1.0"
@@ -6096,6 +6103,7 @@ __metadata:
     css-loader: "npm:^6.10.0"
     css-minimizer-webpack-plugin: "npm:^6.0.0"
     depcheck: "npm:^1.4.7"
+    dompurify: "npm:^3.0.11"
     jquery: "npm:^3.7.1"
     mini-css-extract-plugin: "npm:^2.8.1"
     npm-run-all: "npm:^4.1.5"

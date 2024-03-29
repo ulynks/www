@@ -18,6 +18,7 @@ _ulynks_::cp_vendor() {
   local -a _packages=(
     "jquery/dist/jquery.min.js"
     "bootstrap/dist/js/bootstrap.bundle.min.js"
+    "dompurify/dist/purify.min.js"
   )
   cat <<EOF
 
@@ -26,11 +27,14 @@ Update ${_dest}...
 EOF
   for _pack in "${_packages[@]}"; do
     cp -pvf "./node_modules/${_pack}"* "./${_dest}/"
-    _html+=$'\n'"<script src=\"${_dest##*/}/${_pack##*/}\"></script>"
+    _html+=$'\n'"<script src=\"/${_dest##*/}/${_pack##*/}\"></script>"
   done
   cat <<EOF
 
-Insert these lines to source your scripts 👇
+Open
+./themes/ulynks/layouts/partials/script.html
+
+And insert these lines to source your scripts 👇
 ${_html}
 
 EOF

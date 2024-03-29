@@ -1,4 +1,4 @@
-/* global $ */
+/* global $, DOMPurify */
 // import $ from "jquery";
 
 // Import all of Bootstrap's JS
@@ -6,6 +6,7 @@
 
 const SITE = {
   title: "uLynks",
+  email: "contact@ulynks.io",
 }
 
 $(function () {
@@ -33,18 +34,37 @@ $(function () {
   })
   */
 
+
   $('.nav-link').each(function () {
-    $(this).removeClass('active').removeAttr('aria-current')
+    $(this)
+      .removeClass('active')
+      .removeAttr('aria-current')
+
     let link = $(this).text().trim()
-    // console.debug("link", link);
-    link = new RegExp(link, 'gi');
+    link = DOMPurify.sanitize(link)
+    // console.debug("link", link)
+    link = new RegExp(link, 'gi')
     if (!page.match(link)) return
-    $(this).addClass('active').attr('aria-current', 'page')
+
+    $(this)
+      .addClass('active')
+      .attr('aria-current', 'page')
   })
 
-  $('a[data-mail]').on('click', function () {
-    window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
+
+  $('a[href^="mailto:"]').on('click', function () {
+    /* window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n") */
+
+    let link = 'mailto:' + encodeURIComponent(SITE.email)
+    link += '?subject=' + encodeURIComponent("Sent From " + SITE.title + " Website")
+    link += '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
+
+    window.location = link
+
+    // event.preventDefault()
+    return false
   })
+
 
   /**
    * Add target="'_blank" to all external links
@@ -52,11 +72,11 @@ $(function () {
   $("a[href^='http']").each(function () {
     /* console.debug('_link', this.href); */
     let rel = $(this).attr('rel')
+    rel = DOMPurify.sanitize(rel)
     rel = 'noopener noreferrer' + (rel && !rel.match('noopener noreferrer') ? ' ' + rel : '')
     /* console.debug('rel', rel); */
     $(this).attr({ 'target': '_blank', 'rel': rel })
   })
-
 
 
   /**
@@ -78,7 +98,8 @@ $(function () {
     // $(this).attr({ 'src': src })
     changeImageSourceHover($(this))
   }).on('mouseleave', function () {
-    const src = $(this).attr('data-src') || $(this).attr('src')
+    let src = $(this).attr('data-src') || $(this).attr('src')
+    src = DOMPurify.sanitize(src)
     // src = src.replace('-hover', '')
     // console.debug('mouseleave src', src);
     $(this).attr({ 'src': src })
@@ -111,8 +132,9 @@ function pathExists(url, callback) {
  * @returns
  */
 function changeImageSourceHover(obj) {
-  const hover = obj.attr('data-hover') || false
+  let hover = obj.attr('data-hover') || false
   if (hover) {
+    hover = DOMPurify.sanitize(hover)
     obj.attr({ 'src': hover })
     return
   }
