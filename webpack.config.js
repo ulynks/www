@@ -11,13 +11,13 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-
 const path = require('path');
 
 module.exports = {
   entry: [
     // path.resolve('src', 'js', 'app.js'),
     path.resolve('themes', 'ulynks', 'assets', 'js', 'app.js'),
+    path.resolve('themes', 'ulynks', 'assets', 'js', 'bootstrap-color-mode.js'),
     // path.resolve('src', 'css', 'app.css'),
     path.resolve('themes', 'ulynks', 'assets', 'css', 'app.css'),
   ],

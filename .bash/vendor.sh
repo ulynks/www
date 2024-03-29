@@ -41,4 +41,35 @@ And past them into 👇
 EOF
 }
 
-_ulynks_::cp_vendor
+_ulynks_::cache_remove() {
+  local _cache="./public"
+  cat <<EOF
+
+Cache Remove ${_cache}...
+
+EOF
+  rm -rf "${_cache}"
+}
+
+_ulynks_::cp_fonts() {
+  local _dest="static" _html="" _pack
+  local -a _packages=(
+    "bootstrap-icons/bootstrap-icons.svg"
+  )
+  cat <<EOF
+
+Update ${_dest}...
+
+EOF
+  for _pack in "${_packages[@]}"; do
+    cp -pvf "./node_modules/${_pack}"* "./${_dest}/"
+  done
+}
+
+_ulynks_::main() {
+  _ulynks_::cache_remove
+  _ulynks_::cp_fonts
+  _ulynks_::cp_vendor
+}
+
+_ulynks_::main
