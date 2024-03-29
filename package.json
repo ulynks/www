@@ -51,6 +51,7 @@
     "start": "run-p 'start:*'",
     "start:hugo": "hugo version && hugo server --buildDrafts",
     "start:webpack": "webpack --mode=production",
+    "start:firefox": "open -na /Applications/Firefox.app --args '--private-window' 'http://localhost:1313/'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "vendor": ".bash/vendor.sh",
     "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && ( npx depcheck --detailed ) || : && yarn upgrade-interactive"
