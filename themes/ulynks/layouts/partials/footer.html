@@ -40,7 +40,9 @@
       </div>
 
       <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
-        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.<a href="#">Privacy</a> · <a href="#">Terms</a>
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved &nbsp;&bull;&nbsp; <a
+            class="text-body-secondary" href="#">Privacy</a>
+          &nbsp;&bull;&nbsp; <a class="text-body-secondary" href="#">Terms</a>
         </p>
         <ul class="list-unstyled d-flex">
           {{- range site.Params.social }}
