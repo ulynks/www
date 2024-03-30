@@ -41,14 +41,12 @@ And past them into 👇
 EOF
 }
 
-_ulynks_::cache_remove() {
-  local _cache="./public"
-  cat <<EOF
-
-Cache Remove ${_cache}...
-
-EOF
-  rm -rf "${_cache}"
+_ulynks_::drop_cache() {
+  local -a _dir=("public" "resources")
+  for _cache in "${_dir[@]}"; do
+    printf "Drop cache folder %s...\n" "${_cache}" &&
+      rm -rf "./${_cache}"s
+  done
 }
 
 _ulynks_::cp_fonts() {
@@ -67,7 +65,7 @@ EOF
 }
 
 _ulynks_::main() {
-  _ulynks_::cache_remove
+  _ulynks_::drop_cache
   _ulynks_::cp_fonts
   _ulynks_::cp_vendor
 }
