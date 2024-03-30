@@ -72,6 +72,7 @@ $theme-colors: map-merge($theme-colors, $colors);
 
 // 8. Add additional custom code here
 
-@import "8-fonts";
+@import "8-carousel";
 @import "8-custom";
-@import "8-custom-carousel";
+@import "8-color-mode-switch";
+@import "8-fonts";
