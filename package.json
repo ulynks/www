@@ -5,7 +5,7 @@
     "url": "https://github.com/ulynks/www/issues"
   },
   "dependencies": {
-    "@fontsource/poppins": "^5.0.12",
+    "@fontsource/poppins": "^5.0.13",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",

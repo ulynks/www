@@ -1424,10 +1424,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/poppins@npm:^5.0.12":
-  version: 5.0.12
-  resolution: "@fontsource/poppins@npm:5.0.12"
-  checksum: 10c0/7d8441ae7984246f3132e7c3f5cd8cb37b48c5845325b11700f649cde0e294bbd7513ae0f3acbabfe10bed9045c3ba873e73e12569287955595cbd1f7fd6724f
+"@fontsource/poppins@npm:^5.0.13":
+  version: 5.0.13
+  resolution: "@fontsource/poppins@npm:5.0.13"
+  checksum: 10c0/d9465da5c46ef3938773ce006d3d7162d62a8c8cd028f9e780cc0ac3dbdcf001a1573b72a9bedb9ef7b6d849782d915326295c5c50d76108982e9e7455f3f536
   languageName: node
   linkType: hard
 
@@ -6093,7 +6093,7 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.24.3"
     "@babel/preset-env": "npm:^7.24.3"
-    "@fontsource/poppins": "npm:^5.0.12"
+    "@fontsource/poppins": "npm:^5.0.13"
     "@popperjs/core": "npm:^2.11.8"
     autoprefixer: "npm:^10.4.19"
     babel-loader: "npm:^9.1.3"
