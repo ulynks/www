@@ -5,6 +5,7 @@ description: SDU RIO Analytics Funding Web Apps
 draft: false
 image: /portfolio/sdu-white-square.svg
 link: https://sdurioanalytics.sdu.dk
+tags: ["Web Apps"]
 ---
 
 The Research and Innovation Fundraising Digital Tools are a suite of Web Apps designed for assisting Researchers, Research Support Advisors and Research Managers and Administrators (RMA) throughout a grant proposal submission from finding a pertinent financing opportunity to writing an impactful project 🔬
