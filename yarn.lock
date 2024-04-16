@@ -2698,9 +2698,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "css-loader@npm:7.0.0"
+"css-loader@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "css-loader@npm:7.1.1"
   dependencies:
     icss-utils: "npm:^5.1.0"
     postcss: "npm:^8.4.33"
@@ -2718,7 +2718,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 10c0/7264eaeda77e1312b15510dc5aa82e4c46ccb82c3b34fb6ecb5c5bd0a3f53b0ec0d04839e65ad34c73297075bfdd072b62d2dae6f7d8d97ec2c630d7c1909e9a
+  checksum: 10c0/ebb4ffe68e9df0036fcce66ae182648d4d16b2fdfdc04a5bf7d7783776d389a23be161bb7139a3f842dc75466882544f46d2183bc9399d0bacf83b66a1802b41
   languageName: node
   linkType: hard
 
@@ -3011,10 +3011,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.0.11":
-  version: 3.0.11
-  resolution: "dompurify@npm:3.0.11"
-  checksum: 10c0/38740deed057da8076e85026853635312a6720a21430218a85875e5f43e453c78637d93aa08c744460b0e91c652b06c736efb481c408a8f9c81894d8f76e0de1
+"dompurify@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "dompurify@npm:3.1.0"
+  checksum: 10c0/8adbcc6de954bd0486ae033489c6b52f5aece356963734b82b6d28f9f6ba79a846c4d23085679c0423e81fd8ac8f804dc8c2dfcc0e03e86db2cf0da3e33ad481
   languageName: node
   linkType: hard
 
@@ -5571,16 +5571,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.74.1":
-  version: 1.74.1
-  resolution: "sass@npm:1.74.1"
+"sass@npm:^1.75.0":
+  version: 1.75.0
+  resolution: "sass@npm:1.75.0"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10c0/4610257ee27823276ce4998a534b4ee9f313e5a0b3d3899e70e0f87096feeae4cd8dd3c2f765b52f57dd87f5dab22370ef63f95a837a189fbb9401396d5ce717
+  checksum: 10c0/1564ab2c8041c99a330cec93127fe8abcf65ac63eecb471610ed7f3126a2599a58b788a3a98eb8719f7f40b9b04e00c92bc9e11a9c2180ad582b8cba9fb030b0
   languageName: node
   linkType: hard
 
@@ -6153,16 +6153,16 @@ __metadata:
     bootstrap: "npm:^5.3.3"
     bootstrap-icons: "npm:^1.11.3"
     core-js: "npm:^3.36.1"
-    css-loader: "npm:^7.0.0"
+    css-loader: "npm:^7.1.1"
     css-minimizer-webpack-plugin: "npm:^6.0.0"
     depcheck: "npm:^1.4.7"
-    dompurify: "npm:^3.0.11"
+    dompurify: "npm:^3.1.0"
     jquery: "npm:^3.7.1"
     mini-css-extract-plugin: "npm:^2.8.1"
     npm-run-all: "npm:^4.1.5"
     postcss: "npm:^8.4.38"
     postcss-loader: "npm:^8.1.1"
-    sass: "npm:^1.74.1"
+    sass: "npm:^1.75.0"
     webpack: "npm:^5.91.0"
     webpack-cli: "npm:^5.1.4"
   languageName: unknown
