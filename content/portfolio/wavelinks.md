@@ -25,7 +25,7 @@ And more to come on services, policies, funding, events and many others.
 
 WaveLinks is focused on providing you an effortless experience when searching for the latest knowledge and making links between academia, industry, policy and society.
 
-### Decide what you want to see
+<!-- ### Decide what you want to see
 
 With a personalized dashboard, you are able to select the information that is most relevant to you so that you are up to date in your interest field
 
@@ -43,4 +43,6 @@ According to what you save in your profile the app will suggest some more projec
 
 ### We use your feedback
 
-Just by clicking on a thumbs up or down button, your feedback will help us to improve the app and make sure each search and suggestion gives you valuable information.
+Just by clicking on a thumbs up or down button, your feedback will help us to improve the app and make sure each search and suggestion gives you valuable information. -->
+
+{{< wavelinks-featurettes >}}<p>Hello <strong>World!</strong></p>{{< /wavelinks-featurettes >}}
