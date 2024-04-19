@@ -2,10 +2,10 @@
 
 // $orange: #fd7e14 !default;
 $orange: #e07e3c !default;
+$brown: #4A1E00 !default;
 // $primary:       $blue !default;
 $primary: $orange !default;
-
-
+$secondary-light: $brown !default;
 
 // Typography
 //
@@ -13,3 +13,17 @@ $primary: $orange !default;
 
 // $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-sans-serif: "Poppins", sans-serif !default;
+
+// Override SCSS variables
+$heading-font-family: 'Poppins', sans-serif;
+$content-font-family: 'Open Sans', sans-serif;
+
+// Apply font families to specific elements
+h1,
+h2 {
+  font-family: $heading-font-family;
+}
+
+p {
+  font-family: $content-font-family;
+}
