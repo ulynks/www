@@ -8,4 +8,6 @@ link: https://eu-funding.aau.dk
 tags: ["Web Apps"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Research and Innovation Fundraising Digital Tools are a suite of Web Apps designed for assisting Researchers, Research Support Advisors and Research Managers and Administrators (RMA) throughout a grant proposal submission from finding a pertinent financing opportunity to writing an impactful project 🔬
+
+{{< sdu-rio-analytics-funding-web-apps >}}<p>Hello <strong>World!</strong></p>{{< /sdu-rio-analytics-funding-web-apps >}}
