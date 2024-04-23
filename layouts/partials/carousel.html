@@ -26,7 +26,7 @@
     <div class="carousel-item{{ if eq $i 0 }} active{{ end }}">
       <img src="/{{ $icon }}.svg" class="d-block w-100" alt="{{ .LinkTitle }}">
       <div class="container">
-        <div class="carousel-caption text-start">
+        <div class="carousel-caption text-start text-primary bg-white opacity-75 p-3">
           <h1>{{ .LinkTitle }}</h1>
           <p class="opacity-75">{{ .Description | safeHTML | truncate 150 }}</p>
           <p><a class="btn btn-lg btn-primary" href="{{ .RelPermalink }}">Read more</a></p>
