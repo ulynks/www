@@ -1,57 +1,65 @@
 <div id="homeCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
   <div class="carousel-indicators">
+    {{ range $i, $pages := where .Site.RegularPages.Reverse "Section" "expertise" }}
+
+    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="{{ $i }}" {{ if eq $i 0 }} class="active"
+      aria-current="true" {{ end }}aria-label="{{ .LinkTitle }}"></button>
+
+    {{/*
     <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
       aria-current="true"></button>
     <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+    */}}
+
+    {{ end }}
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-      </svg>
+
+    {{/* reverse so that the most recent event appears first  */}}
+    {{ range $i, $pages := where .Site.RegularPages.Reverse "Section" "expertise" }}
+
+    {{ $icon := .RelPermalink }}
+    {{ $icon = replace $icon "expertise" "carousel" }}
+    {{ $icon = trim $icon "/" }}
+
+    <div class="carousel-item{{ if eq $i 0 }} active{{ end }}">
+      <img src="/{{ $icon }}.svg" class="d-block w-100" alt="{{ .LinkTitle }}">
       <div class="container">
         <div class="carousel-caption text-start">
-          <h1>Example headline.</h1>
-          <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          <h1>{{ .LinkTitle }}</h1>
+          <p class="opacity-75">{{ .Description | safeHTML | truncate 150 }}</p>
+          <p><a class="btn btn-lg btn-primary" href="{{ .RelPermalink }}">Read more</a></p>
         </div>
       </div>
     </div>
-    <div class="carousel-item active">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-      </svg>
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Some representative placeholder content for the second slide of the carousel.</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-        </div>
+
+    {{/*
+    <div class="card-group py-2">
+      <a class="link-dark" href="{{ .RelPermalink }}" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+    data-bs-title="Open our page on {{ .LinkTitle }}">
+    <div class="card h-100">
+      <div class="card-body">
+        <p class="fs-1 mb-0"><i class="bi bi-{{ $icon }}"></i></p>
+        <h5 class="card-title fw-bold">{{ .LinkTitle }}</h5>
+        <p class="card-text">{{ .Description | safeHTML | truncate 150 }}</p>
       </div>
     </div>
-    <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-        preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-      </svg>
-      <div class="container">
-        <div class="carousel-caption text-end">
-          <h1>One more for good measure.</h1>
-          <p>Some representative placeholder content for the third slide of this carousel.</p>
-          <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-        </div>
-      </div>
-    </div>
+    </a>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+
+  */}}
+
+  {{ end }}
+</div>
+
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
 </div>
