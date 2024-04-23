@@ -48,6 +48,21 @@
             "src" "yerun"
             "href" "www.sdu.dk/en"
           )
+        }}
+
+        {{/* {{ $_brand := slice
+          (dict
+            "src" "sdu"
+            "href" "www.sdu.dk/en"
+          )
+          (dict
+            "src" "aau"
+            "href" "www.en.aau.dk"
+          )
+          (dict
+            "src" "yerun"
+            "href" "www.sdu.dk/en"
+          )
           (dict
             "src" "prep4blue"
             "href" "www.sdu.dk/en"
@@ -60,7 +75,8 @@
             "src" "bmaa"
             "href" "www.sdu.dk/en"
           )
-        }}
+        }} */}}
+
         {{ range $_brand }}
         <div class="col py-3">
           <a href="https://{{ .href }}"><img class="img-fluid" src="/home/{{ .src }}-white.svg" alt="{{ .src }}"></a>
