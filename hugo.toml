@@ -56,19 +56,20 @@ blog = "/blog/:year/:month/:day/:title/"
 [markup.goldmark.renderer]
 unsafe = true
 
-[[menus.main]]
-name = 'Team'
-pageRef = '/team'
-weight = 1
-
-[[menus.main]]
-name = 'Portfolio'
-pageRef = '/portfolio'
-weight = 2
 
 [[menus.main]]
 name = 'Expertise'
 pageRef = '/expertise'
+weight = 1
+
+[[menus.main]]
+name = 'Team'
+pageRef = '/team'
+weight = 2
+
+[[menus.main]]
+name = 'Portfolio'
+pageRef = '/portfolio'
 weight = 3
 
 [[menus.main]]
