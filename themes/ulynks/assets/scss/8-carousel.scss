@@ -23,18 +23,17 @@
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
   z-index: 10;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.65);
 }
+
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-}
-
-/* White with 75% opacity */
-.bg-white-75 {
-  background-color: rgba(255, 255, 255, 0.75);
 }
 
 
