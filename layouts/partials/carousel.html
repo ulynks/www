@@ -1,19 +1,16 @@
 <div id="homeCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <!--
   <div class="carousel-indicators">
+    {{/*
     {{ range $i, $pages := where .Site.RegularPages.Reverse "Section" "expertise" }}
 
     <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="{{ $i }}" {{ if eq $i 0 }} class="active"
       aria-current="true" {{ end }}aria-label="{{ .LinkTitle }}"></button>
 
-    {{/*
-    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
-      aria-current="true"></button>
-    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-    */}}
-
     {{ end }}
+    */}}
   </div>
+-->
   <div class="carousel-inner">
 
     {{/* reverse so that the most recent event appears first  */}}
@@ -26,10 +23,12 @@
     <div class="carousel-item{{ if eq $i 0 }} active{{ end }}">
       <img src="/{{ $icon }}.svg" class="d-block w-100" alt="{{ .LinkTitle }}">
       <div class="container">
-        <div class="carousel-caption text-start text-primary bg-white-75 p-3">
-          <h1>{{ .LinkTitle }}</h1>
-          <p class="opacity-75">{{ .Description | safeHTML | truncate 150 }}</p>
-          <p><a class="btn btn-lg btn-primary" href="{{ .RelPermalink }}">Read more</a></p>
+        <div class="carousel-caption text-start text-white p-3">
+          <div class="container">
+            <h1>{{ .LinkTitle }}</h1>
+            <p class="opacity-75">{{ .Description | safeHTML | truncate 150 }}</p>
+            <p><a class="btn btn-lg btn-primary" href="{{ .RelPermalink }}">Read more</a></p>
+          </div>
         </div>
       </div>
     </div>
