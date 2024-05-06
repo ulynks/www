@@ -21,7 +21,7 @@
     {{ $icon = trim $icon "/" }}
 
     <div class="carousel-item{{ if eq $i 0 }} active{{ end }}">
-      <img src="/{{ $icon }}.svg" class="d-block w-100" alt="{{ .LinkTitle }}">
+      <img src="/{{ $icon }}.svg" class="d-block w-100 img-vertical-center" alt="{{ .LinkTitle }}">
       <div class="container">
         <div class="carousel-caption text-start text-white p-3">
           <div class="container">

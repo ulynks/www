@@ -8,8 +8,6 @@ link: https://www.wavelinks.eu
 tags: ["Web Apps"]
 ---
 
-WaveLinks is focused on providing you an effortless experience when searching for the latest knowledge and making links between academia, industry, policy and society.
-
 WaveLinks is an application that maps the research and innovation landscape of the Mission Ocean, fosters collaborations between projects and reinforces links between academia, industry and society.
 
 Our mission is to ensure that valuable insights and discoveries no longer remain isolated but instead become catalysts for innovation and progress.
