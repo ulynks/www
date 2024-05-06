@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1 class="title-h1 border-bottom-0 mb-0">{{ .Title }}</h1>
+
+{{ $dateMachine := .Date | time.Format "2024-02-20T00:00:45+01:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+<main class="markdown-body">
+
+  <article class="lead pt-6">
+    {{ .Content }}
+  </article>
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+</main>
+{{ end }}

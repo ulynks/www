@@ -1,0 +1,53 @@
+baseURL = 'https://www.ulynks.io/'
+languageCode = 'en-us'
+title = 'uLynks'
+# theme = 'ananke'
+theme = 'ulynks'
+
+# Configure server
+# - https://gohugo.io/getting-started/configuration/#configure-server
+# - https://content-security-policy.com
+
+[server]
+[[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = """
+      default-src 'self';
+      connect-src 'self' https://eu.umami.is;
+      font-src https://fonts.gstatic.com;
+      script-src 'self' https://cdn.jsdelivr.net https://eu.umami.is;
+      style-src 'self' https://fonts.googleapis.com
+      """
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-XSS-Protection = '1; mode=block'
+
+[params]
+  subtitle = 'Growing on Fyn, Denmark 🇩🇰'
+  umami = '3cf42fbf-5ff7-4ba7-b4d1-607641c5b4e8'
+  mainWebsite = 'https://www.ulynks.io/'
+  [params.contact]
+    email = 'contact@ulynks.io'
+    phone = ''
+
+[[menus.main]]
+name = 'Team'
+pageRef = '/team'
+weight = 1
+
+[[menus.main]]
+name = 'Portfolio'
+pageRef = '/portfolio'
+weight = 2
+
+[[menus.main]]
+name = 'Expertise'
+pageRef = '/expertise'
+weight = 3
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

@@ -1,0 +1,24 @@
+// Primer CSS Typography variables
+// see: <https://github.com/pages-themes/primer/blob/master/_sass/primer-support/lib/variables/typography.scss>
+
+// Heading sizes - desktop
+// $h1-size: 32px !default;
+$h1-size: 64px !default;
+
+// Font stacks
+// $body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$body-font: "Poppins", sans-serif !default;
+
+@import "@primer/css/index.scss";
+
+// Custom
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.w-1200 {
+  max-width: 1200px;
+}

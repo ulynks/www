@@ -1,0 +1,52 @@
+{
+  "name": "uLynks",
+  "description": "Growing on Fyn, Denmark 🇩🇰",
+  "main": "index.js",
+  "private": true,
+  "browserslist": "> 1%",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p 'start:*'",
+    "start:hugo": "hugo version && hugo server --buildDrafts",
+    "start:webpack": "webpack --mode=production",
+    "build": "run-s build:webpack build:hugo",
+    "build:hugo": "hugo",
+    "build:webpack": "webpack --mode=production",
+    "dev:webpack": "webpack --mode=development --watch",
+    "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
+    "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && npx depcheck --detailed && yarn upgrade-interactive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulynks/www.git"
+  },
+  "keywords": [],
+  "author": "@JV-conseil",
+  "license": "EUPL-1.2",
+  "bugs": {
+    "url": "https://github.com/ulynks/www/issues"
+  },
+  "homepage": "https://github.com/ulynks/www#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "autoprefixer": "^10.4.17",
+    "babel-loader": "^9.1.3",
+    "core-js": "^3.36.0",
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "depcheck": "^1.4.7",
+    "mini-css-extract-plugin": "^2.8.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^8.1.0",
+    "sass": "^1.71.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.0.8",
+    "@primer/css": "^21.2.0",
+    "jquery": "^3.7.1"
+  },
+  "packageManager": "yarn@4.1.0"
+}

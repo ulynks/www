@@ -1,0 +1,60 @@
+{
+  "author": "@JV-conseil",
+  "browserslist": "> 1%",
+  "bugs": {
+    "url": "https://github.com/ulynks/www/issues"
+  },
+  "dependencies": {
+    "@fontsource/poppins": "^5.0.14",
+    "@popperjs/core": "^2.11.8",
+    "@primer/css": "^21.2.2",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "dompurify": "^3.1.2",
+    "jquery": "^3.7.1"
+  },
+  "description": "Growing on Fyn, Denmark 🇩🇰",
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.1.3",
+    "core-js": "^3.37.0",
+    "css-loader": "^7.1.1",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "depcheck": "^1.4.7",
+    "mini-css-extract-plugin": "^2.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.76.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "homepage": "https://github.com/ulynks/www#readme",
+  "keywords": [],
+  "license": "EUPL-1.2",
+  "main": "index.js",
+  "name": "uLynks",
+  "packageManager": "yarn@4.2.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulynks/www.git"
+  },
+  "scripts": {
+    "assets": "(yarn run sass & yarn run vendor) && yarn run start:webpack",
+    "build": "run-s build:webpack build:hugo",
+    "build:hugo": "hugo",
+    "build:webpack": "webpack --mode=production",
+    "dev:webpack": "webpack --mode=development --watch",
+    "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
+    "start": "run-p 'start:*'",
+    "start:hugo": "hugo version && hugo server --buildDrafts",
+    "start:webpack": "webpack --mode=production",
+    "start:firefox": "open -na /Applications/Firefox.app --args '--private-window' 'http://localhost:1313/'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vendor": ".bash/vendor.sh",
+    "yarn-update": "yarn set version stable && yarn install && yarn up && yarn npm audit && ( npx depcheck --detailed ) || : && yarn upgrade-interactive"
+  }
+}
