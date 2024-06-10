@@ -29,6 +29,8 @@
 
   setTheme(getPreferredTheme())
 
+  switchMediaToActiveTheme(getStoredTheme())
+
   const showActiveTheme = (theme, focus = false) => {
     const themeSwitcher = document.querySelector('#bd-theme')
 
@@ -74,7 +76,34 @@
           setStoredTheme(theme)
           setTheme(theme)
           showActiveTheme(theme, true)
+          switchMediaToActiveTheme(theme)
         })
       })
   })
 })()
+
+
+/**
+ * Switch img src path
+ * - from .../dark/...{png,svg}
+ * - to .../light/...{png,svg}
+ * @param {*} theme
+ * Copyright (c) 2019-2024 JV-conseil
+ *               All rights reserved
+ */
+function switchMediaToActiveTheme(theme = "dark") {
+  // theme = (theme == "light" ? "light" : "dark")
+  // theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  if (theme === 'auto') theme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+  let altTheme = (theme == "dark" ? "light" : "dark")
+  // console.debug("altTheme ", altTheme)
+  document.querySelectorAll('img').forEach((x) => {
+    let src = x.getAttribute('src')
+    // console.debug("src ", src)
+    // console.debug("src match ", src.match("/" + altTheme + "/"))
+    if (!src.match("/" + altTheme + "/")) return
+    let srcChanged = src.replace("/" + altTheme + "/", "/" + theme + "/")
+    // console.debug("srcChanged ", srcChanged)
+    x.setAttribute("src", srcChanged);
+  });
+}

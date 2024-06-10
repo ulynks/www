@@ -34,7 +34,7 @@
       <h1 class="fw-bold">Organizations that trust us</h1>
       <p class="text-muted lead">Here are some of our ongoing collaborations with academic institutions and
         organizations.</p>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center align-items-center bg-secondary">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center align-items-center">
         {{ $_brand := slice
           (dict
             "src" "sdu"
@@ -46,7 +46,7 @@
           )
           (dict
             "src" "yerun"
-            "href" "www.sdu.dk/en"
+            "href" "yerun.eu"
           )
         }}
 
@@ -79,7 +79,7 @@
 
         {{ range $_brand }}
         <div class="col py-3">
-          <a href="https://{{ .href }}"><img class="img-fluid" src="/home/{{ .src }}-white.svg" alt="{{ .src }}"></a>
+          <a href="https://{{ .href }}"><img class="img-fluid" src="/home/dark/{{ .src }}.svg" alt="{{ .src }}"></a>
         </div>
         {{ end }}
       </div>
