@@ -92,18 +92,16 @@
  *               All rights reserved
  */
 function switchMediaToActiveTheme(theme = "dark") {
-  // theme = (theme == "light" ? "light" : "dark")
-  // theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  if (theme === 'auto') theme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+  if (theme === 'auto' || theme === null) theme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
   let altTheme = (theme == "dark" ? "light" : "dark")
   // console.debug("altTheme ", altTheme)
   document.querySelectorAll('img').forEach((x) => {
     let src = x.getAttribute('src')
     // console.debug("src ", src)
     // console.debug("src match ", src.match("/" + altTheme + "/"))
-    if (!src.match("/" + altTheme + "/")) return
+    if (src.match("/" + altTheme + "/") === null) return
     let srcChanged = src.replace("/" + altTheme + "/", "/" + theme + "/")
-    // console.debug("srcChanged ", srcChanged)
+    // console.debug("srcChanged %s --> %s", altTheme, srcChanged)
     x.setAttribute("src", srcChanged);
   });
 }
