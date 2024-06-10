@@ -3,7 +3,7 @@ title: Aalborg Funding Web Apps
 date: 2024-03-08T21:44:00+01:00
 description: Aalborg Funding Web Apps
 draft: false
-image: /portfolio/dark/aau-white-square.svg
+image: /portfolio/dark/aau-square.svg
 link: https://eu-funding.aau.dk
 tags: ["Web Apps"]
 ---
