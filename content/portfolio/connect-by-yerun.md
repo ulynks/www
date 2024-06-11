@@ -3,7 +3,7 @@ title: Connect by YERUN
 date: 2024-03-08T21:44:00+01:00
 description: Connect by YERUN
 draft: false
-image: /portfolio/dark/connect-by-yerun-square-without-drop-shadow.svg
+image: /portfolio/dark/connect-by-yerun-square.svg
 link: https://www.connect-by-yerun.eu
 tags: ["Web Apps", "Researchers", "Research Managers"]
 ---
@@ -24,4 +24,4 @@ Our web application is designed with a focus on delivering a seamless and effort
 It uses different AI techniques to synthesise information as well compare and match profiles and interests.
 The database is updated both regularly and on demand. -->
 
-{{< yerun-featurettes >}}<p> <strong>Not</strong>empty world!</p>{{< /yerun-featurettes >}}
+{{< yerun-featurettes >}}<p><strong>Not</strong> empty world!</p>{{< /yerun-featurettes >}}
