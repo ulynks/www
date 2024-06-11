@@ -5,7 +5,7 @@ description: "uLynks team analyses, synthesises, and shares complex and scattere
 draft: false
 # image: "/home/home.png"
 # image: "/home/sdu-black.png"
-image: "/home/dark/sdu.png"
+image: "/home/dark/sdu-logo-with-text.svg"
 ---
 
 <!--

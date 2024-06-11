@@ -20,7 +20,7 @@
         {{ .Content }}
       </div>
       <div class="col-sm-4 py-3">
-        <img src="{{ .Params.image }}" alt="{{ .Content }}" class="img-fluid img-hover">
+        <img src="{{ .Params.image }}" alt="{{ .Content }}" class="img-fluid">
       </div>
     </div>
 
@@ -34,14 +34,14 @@
       <h1 class="fw-bold">Organizations that trust us</h1>
       <p class="text-muted lead">Here are some of our ongoing collaborations with academic institutions and
         organizations.</p>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 text-center align-items-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-gap-5 text-center align-items-center">
         {{ $_brand := slice
           (dict
             "src" "sdu"
             "href" "www.sdu.dk/en"
           )
           (dict
-            "src" "aau"
+            "src" "aau-horizontal"
             "href" "www.en.aau.dk"
           )
           (dict
@@ -78,8 +78,8 @@
         }} */}}
 
         {{ range $_brand }}
-        <div class="col py-3">
-          <a href="https://{{ .href }}"><img height="300" src="/home/dark/{{ .src }}.svg" alt="{{ .src }}"></a>
+        <div class="col py-3 px-5">
+          <a href="https://{{ .href }}"><img class="img-fluid" src="/home/dark/{{ .src }}.svg" alt="{{ .src }}"></a>
         </div>
         {{ end }}
       </div>
