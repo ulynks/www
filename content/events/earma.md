@@ -11,7 +11,7 @@ image: "https://earma.org/media/gallery/events-content_odense-microsite-banner-u
 
 [![EARMA Conference Odense 2024](https://earma.org/media/gallery/events-content_odense-microsite-banner-updated.jpg)][earma]
 
-The European Association for Research Managers and Administrators (EARMA) conference is an annual event that brings together professionals involved in research management and administration from across Europe and beyond. EARMA is a network of organizations involved in the management of research funding, research policy, and research administration.
+The European Association for Research Managers and Administrators (EARMA) conference is an annual event that brings together professionals involved in research management and administration from across Europe and beyond. EARMA is a network of organisations involved in the management of research funding, research policy, and research administration.
 
 The conference provides a platform for participants to exchange knowledge, share best practices, discuss challenges, and explore emerging trends in research management and administration.
 

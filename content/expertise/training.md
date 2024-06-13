@@ -11,4 +11,4 @@ Unleash the power of generative AI with our cutting-edge training program, tailo
 
 Dive into the world of prompting, explore diverse use cases, and witness the magic of image generation. But that's not all! We're also fostering a dynamic learning circle community, where you'll stay ahead of AI news, gain insider knowledge, and have a platform to voice your concerns.
 
-This is more than just a training program; it's an opportunity to expand your skillset, unlock new possibilities, and be part of a vibrant AI-driven community. Join us on this exciting journey, and let's shape the future of AI together.
+This is more than just a training program; it's an opportunity to expand your skill set, unlock new possibilities, and be part of a vibrant AI-driven community. Join us on this exciting journey, and let's shape the future of AI together.
