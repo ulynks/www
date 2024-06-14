@@ -1,27 +1,8 @@
 {{ define "main" }}
-<main>
-  <div class="container py-5">
-
-    <h1 class="display-1 pb-4">{{ .Title }}</h1>
-
-    {{ .Content }}
-
-    <div class="list-group">
-      {{ range .Pages }}
-
-      <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action" aria-current="true">
-
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="my-3">{{ .LinkTitle }}</h5>
-        </div>
-
-        <p class="text-body-secondary mb-2">{{ .Summary | safeHTML | truncate 200 }}</p>
-
-      </a>
-
-      {{ end }}
-    </div>
-
-  </div>
-</main>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range .Pages }}
+<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+{{ .Summary }}
+{{ end }}
 {{ end }}

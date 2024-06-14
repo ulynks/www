@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" data-bs-theme="dark" class="h-100">
+<html lang="{{ .Site.LanguageCode }}" data-color-mode="dark" data-dark-theme="dark_dimmed">
   {{- partial "head.html" . -}}
 
-  <body class="d-flex flex-column h-100">
-    {{- partial "color-mode-switch.html" . -}}
-    {{- partial "header.html" . -}}
-    {{- block "main" . }}{{- end }}
-    {{- partial "footer.html" . -}}
+  <body>
+    <div class="w-1200 mx-auto py-1 px-2">
+      {{- partial "header.html" . -}}
+      {{- block "main" . }}{{- end }}
+      {{- partial "footer.html" . -}}
+    </div>
     {{- partial "script.html" . -}}
   </body>
 
