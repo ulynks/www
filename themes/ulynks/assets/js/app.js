@@ -1,8 +1,11 @@
-/* global $ */
+/* global $, DOMPurify */
 // import $ from "jquery";
 
+// Import all of Bootstrap's JS
+// import * as bootstrap from 'bootstrap'
+
 const SITE = {
-  title: "uLynks",
+  title: "uLynks"
 }
 
 $(function () {
@@ -19,8 +22,6 @@ $(function () {
     })
     $(this).attr('aria-current', 'page')
   })
-  */
-
 
   $('.app-link').each(function () {
     $(this).removeAttr('aria-current')
@@ -30,19 +31,145 @@ $(function () {
     if (!page.match(link)) return
     $(this).attr('aria-current', 'page')
   })
+  */
 
-  $('a[data-mail]').on('click', function () {
-    window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
+
+  $('.nav-link').each(function () {
+    $(this)
+      .removeClass('active')
+      .removeAttr('aria-current')
+
+    let link = $(this).text().trim()
+    link = DOMPurify.sanitize(link)
+    // console.debug("link", link)
+    link = new RegExp(link, 'gi')
+    if (!page.match(link)) return
+
+    $(this)
+      .addClass('active')
+      .attr('aria-current', 'page')
   })
+
+  /**
+   * mailto click
+   */
+  $('a[href^="mailto:"]').on('click', function () {
+    /* window.location = 'mailto:' + encodeURIComponent($(this).data('mail')) + '?subject=' + encodeURIComponent($(this).data('subject')) + '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n") */
+
+    let email = $(this).attr('href').trim()
+    email = DOMPurify.sanitize(email)
+    email = email.replace(/mailto:/g, '')
+
+    // console.debug("email ", email)
+
+    let link = 'mailto:' + encodeURIComponent(email)
+    link += '?subject=' + encodeURIComponent("Sent From " + SITE.title + " Website")
+    link += '&body=' + encodeURIComponent("Hello " + SITE.title + ",\n\n...\n\nKind Regards,\n")
+
+    // console.debug("link ", link)
+
+    window.location = link
+
+    // event.preventDefault()
+    return false
+  })
+
 
   /**
    * Add target="'_blank" to all external links
    */
   $("a[href^='http']").each(function () {
     /* console.debug('_link', this.href); */
-    $(this).attr({ 'target': '_blank', 'rel': 'noopener noreferrer' })
+    let rel = $(this).attr('rel')
+    rel = DOMPurify.sanitize(rel)
+    rel = 'noopener noreferrer' + (rel && !rel.match('noopener noreferrer') ? ' ' + rel : '')
+    /* console.debug('rel', rel); */
+    $(this).attr({ 'target': '_blank', 'rel': rel })
+  })
+
+
+  /**
+   * Tooltips
+   * https://stackoverflow.com/a/22569369/2477854
+   */
+  // $('[data-bs-toggle="tooltip"]').tooltip()
+  $('body').tooltip({
+    selector: '[data-bs-toggle="tooltip"]'
+  })
+
+  /**
+   * img-hover
+   */
+  $('.img-hover').on('mouseenter', function () {
+    // let src = $(this).attr('src')
+    // src = src.replace(/([^.]+).([^.]+)$/, '$1-hover.$2')
+    // console.debug('mouseenter src', src);
+    // $(this).attr({ 'src': src })
+    changeImageSourceHover($(this))
+  }).on('mouseleave', function () {
+    let src = $(this).attr('data-src') || $(this).attr('src')
+    src = DOMPurify.sanitize(src)
+    // src = src.replace('-hover', '')
+    // console.debug('mouseleave src', src);
+    $(this).attr({ 'src': src })
   })
 });
+
+
+/**
+ * pathExists
+ * @param {*} url
+ * @param {*} callback
+ * XMLHttpRequest: response property
+ * see: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response#examples
+ */
+function pathExists(url, callback) {
+  const xhr = new XMLHttpRequest()
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      callback(xhr.status < 400)
+    }
+  }
+  xhr.open('HEAD', url)
+  xhr.send()
+}
+
+
+/**
+ * changeImageSourceHover
+ * @param {*} obj = $(this)
+ * @returns
+ */
+function changeImageSourceHover(obj) {
+  let hover = obj.attr('data-hover') || false
+  if (hover) {
+    hover = DOMPurify.sanitize(hover)
+    obj.attr({ 'src': hover })
+    return
+  }
+  const src = obj.attr('src')
+  const _src = src.replace(/([^.]+).([^.]+)$/, '$1-hover')
+  for (const _type of ["gif", "jpg", "png", "svg"]) {
+    const _hover = _src + "." + _type
+    pathExists(_hover, function (result) {
+      // console.debug(_hover, result);
+      if (!result) return
+      obj.attr({
+        'src': _hover,
+        'data-hover': _hover,
+        'data-src': src
+      })
+    });
+  }
+  if (obj.attr('data-hover')) return
+  obj.attr({
+    'src': src,
+    'data-hover': src
+  })
+}
+
+
+
 
 /**
  * Freely Inspired by

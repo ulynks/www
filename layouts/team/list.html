@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main>
+  <div class="container py-5">
+
+    <h1 class="display-1">{{ .Title }}</h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+      {{/* reverse so that the most recent event appears first  */}}
+
+
+      {{ range $i, $page := .Pages.Reverse }}
+      {{ $i = add $i 1 }}
+
+      {{/* card with image, title, description and buttons  */}}
+      <div class="col py-3">
+        <div class="card h-100">
+          <div class="card-header text-center p-0">
+            <img class="card-img-top rounded img-hover" src="{{ .Params.image }}" alt="{{ .LinkTitle }}">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">{{ .LinkTitle }}</h2>
+            <p class="card-text">{{ .Summary | safeHTML | truncate 100 }}</p>
+          </div>
+          <div class="card-footer bg-transparent border-0 py-3">
+            <a class="btn btn-primary me-2" href="{{ .RelPermalink }}" role="button"><i
+                class="bi bi-person-fill"></i></a>
+            <a class="btn btn-primary me-2" href="{{ .Params.linkedin }}" role="button"><i
+                class="bi bi-linkedin"></i></a>
+            <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      {{ end }}
+    </div>
+
+
+
+  </div>
+</main>
+{{ end }}
