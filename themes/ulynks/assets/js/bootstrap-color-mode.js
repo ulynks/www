@@ -72,7 +72,8 @@
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
         toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
+          let theme = toggle.getAttribute('data-bs-theme-value')
+          theme = DOMPurify.sanitize(theme)
           setStoredTheme(theme)
           setTheme(theme)
           showActiveTheme(theme, true)
@@ -101,6 +102,7 @@ function switchMediaToActiveTheme(theme = "dark") {
     // console.debug("src match ", src.match("/" + altTheme + "/"))
     if (src.match("/" + altTheme + "/") === null) return
     let srcChanged = src.replace("/" + altTheme + "/", "/" + theme + "/")
+    srcChanged = DOMPurify.sanitize(srcChanged)
     // console.debug("srcChanged %s --> %s", altTheme, srcChanged)
     x.setAttribute("src", srcChanged);
   });
