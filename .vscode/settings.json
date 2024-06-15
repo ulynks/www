@@ -37,6 +37,8 @@
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
   "html.format.unformatted": "",
+  "html.format.unformattedContentDelimiter": "<!-- html-format-ignore -->",
+  "javascript.preferences.quoteStyle": "double",
   "shellcheck.logLevel": "trace",
   "shellformat.effectLanguages": [
     "shellscript",
@@ -57,6 +59,5 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.defaultProfile.windows": "bash",
-  "javascript.preferences.quoteStyle": "double",
-  "typescript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double"
 }
