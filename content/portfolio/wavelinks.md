@@ -1,6 +1,6 @@
 ---
 title: WaveLinks
-date: 2024-03-08T21:44:00+01:00
+date: 2024-06-15T14:10:00+02:00
 description: Wavelinks
 draft: false
 image: /portfolio/dark/wavelinks-square-with-text.svg
