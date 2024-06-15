@@ -46,7 +46,7 @@
           )
           (dict
             "src" "yerun"
-            "href" "yerun.eu"
+            "href" "www.yerun.eu"
           )
         }}
 
@@ -79,7 +79,8 @@
 
         {{ range $_brand }}
         <div class="col py-3 px-5">
-          <a href="https://{{ .href }}"><img class="img-fluid" src="/home/dark/{{ .src }}.svg" alt="{{ .src }}"></a>
+          <a href="https://{{ .href }}" title="Visit Website"><img class="img-fluid" src="/home/dark/{{ .src }}.svg"
+              alt="{{ .src }}"></a>
         </div>
         {{ end }}
       </div>
