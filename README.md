@@ -28,3 +28,17 @@ for _who in "test-1" "test-2"; do
   hugo new content "blog/${_who}.md"
 done
 ```
+
+## yarn install
+
+> The preferred way to manage Yarn is by-project and through Corepack, a tool shipped by default with Node.js. Modern releases of Yarn aren't meant to be installed globally, or from npm. Start by enabling Corepack, if it isn't already; this will add the yarn binary to your PATH:
+
+```bash
+corepack enable
+```
+
+see: <https://yarnpkg.com/getting-started/install>
+
+> So if you wish to switch to Corepack-only, you need to remove the `yarnPath` field from your `.yarnrc.yml` yourself.
+
+see: <https://github.com/yarnpkg/berry/issues/4063#issuecomment-1985599132>
