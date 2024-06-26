@@ -11,17 +11,17 @@
   {{ $description := or .Description .Summary .Site.Params.description .Site.Params.subtitle }}
   <meta name="description" content="{{ $description }}">
 
-  <meta name="twitter:card" content="summary">
-  <meta property="og:description" content="{{ $description }}">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="{{ $title }}">
-  <meta property="og:title" content="{{ $title }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="twitter:title" content="{{ $title }}">
-
+  <meta property="og:description" content="{{ $description }}" />
   {{ $image := or .Params.Image "/favicon/apple-touch-icon.png" }}
   <meta property="og:image" content="{{ .Permalink }}{{ $image }}">
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="{{ $title }}" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="{{ $title }}">
 
   {{ hugo.Generator }}
 
