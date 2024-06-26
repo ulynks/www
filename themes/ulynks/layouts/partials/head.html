@@ -21,7 +21,7 @@
   <meta property="twitter:title" content="{{ $title }}">
 
   {{ $image := or .Params.Image "/favicon/apple-touch-icon.png" }}
-  <meta property="og:image" content="{{ $image }}">
+  <meta property="og:image" content="{{ .Permalink }}{{ $image }}">
 
   {{ hugo.Generator }}
 
