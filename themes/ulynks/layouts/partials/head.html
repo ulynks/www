@@ -13,7 +13,7 @@
 
   <meta property="og:description" content="{{ $description }}" />
   {{ $image := or .Params.Image "/favicon/apple-touch-icon.png" }}
-  <meta property="og:image" content="{{ .Permalink }}{{ $image }}">
+  <meta property="og:image" content="{{ .Permalink }}{{ $image }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ $title }}" />
   <meta property="og:title" content="{{ $title }}" />
