@@ -1,36 +1,26 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
 
+  <!-- Open Graph Protocol (OGP) -->
+
   <meta name="author" content="{{ $title }}">
   {{ $description := or .Description .Summary .Site.Params.description .Site.Params.subtitle }}
-  <meta name="description" content="{{ $description }}">
-
-  <meta property="og:description" content="{{ $description }}" />
-  <meta property="og:image" content="{{ .Permalink }}{{ .Site.Params.image }}" />
-
-  <!-- html-format-ignore -->
-  {{/*
-
-  {{ $image := or .Params.Image "/favicon/apple-touch-icon.png" }}
-  <meta property="og:image" content="{{ substr .Permalink 0 -1 }}{{ $image }}" />
-
-  */}}
-  <!-- html-format-ignore -->
-
+  <meta name="description" property="og:description" content="{{ $description }}" />
+  <meta property="og:image" content="{{ substr .Permalink 0 -1 }}{{ .Params.Image }}" />
+  <meta property="og:image" content="{{ substr .Permalink 0 -1 }}{{ .Site.Params.image }}" />
+  <meta name="title" property="og:title" content="{{ $title }}" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="{{ $title }}" />
-  <meta property="og:title" content="{{ $title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Permalink }}" />
-
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:title" content="{{ $title }}">
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="{{ $title }}" />
 
   {{ hugo.Generator }}
 
