@@ -3,6 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- HTML Meta Tags -->
+
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }} {{ $title = .Site.Title }} {{ end }}
   <title>{{ $title }}</title>
@@ -11,19 +13,23 @@
 
   <meta name="author" content="{{ $title }}">
   {{ $description := or .Description .Summary .Site.Params.description .Site.Params.subtitle }}
-  <meta name="description" property="og:description" content="{{ $description }}" />
+  <meta name="description" property="og:description" content="{{ $description }}">
+
   {{ $image := or .Params.Image .Site.Params.image }}
   {{ if .IsHome }} {{ $image = .Site.Params.image }} {{ end }}
   {{ $image = (printf "%s%s" (substr .Permalink 0 -1) $image ) }}
-  <meta property="og:image" content="{{ $image }}" />
-  <meta name="title" property="og:title" content="{{ $title }}" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="{{ $title }}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ $image }}">
 
-  <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="{{ $title }}" />
+  <meta name="title" property="og:title" content="{{ $title }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ $title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+
+  <!-- Twitter Meta Tags -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ $title }}">
 
   {{ hugo.Generator }}
 
