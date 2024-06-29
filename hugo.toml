@@ -16,7 +16,7 @@ pluralizeListTitles = false
   [server.headers.values]
     Content-Security-Policy = """
     default-src 'self';
-    connect-src 'self' https://eu.umami.is;
+    connect-src 'self' https://eu.umami.is https://api-gateway.umami.dev;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' https://*;
     script-src 'self' https://eu.umami.is;
