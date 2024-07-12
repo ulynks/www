@@ -6,7 +6,7 @@ draft: false
 image: /team/maeva-vignes.jpg
 github: https://github.com/maramusicos
 linkedin: https://www.linkedin.com/in/maevavignes/
-tags: ["Data Scientist"]
+tags: ["Co-Founders", "Data Scientist"]
 ---
 
 Member of the Research Support and Policy Team at SDU RIO, my main goal is to support researchers and department research support offices at SDU to get more external funding. I focus mainly on helping to get funding from Europe (H2020 R&I and Societal Challenge pillars).
