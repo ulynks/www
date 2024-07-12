@@ -6,7 +6,7 @@ description: "Julien Vieillefont"
 image: "/team/julien-vieillefont.jpg"
 github: "https://github.com/JV-conseil"
 linkedin: "https://www.linkedin.com/in/vieillefont"
-tags: ["Full Stack Developper", "Web App Architect", "DevOps"]
+tags: ["Co-Founders", "Full Stack Developper", "Web App Architect", "DevOps"]
 ---
 
 DevOps • Senior Full Stack Developer • Web App Architect
