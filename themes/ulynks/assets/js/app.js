@@ -63,7 +63,7 @@ $(function () {
     // console.debug("email ", email)
 
     let link = 'mailto:' + encodeURIComponent(email)
-    link += '?subject=' + encodeURIComponent(`Sent From ${SITE.title} Website`)
+    link += '?subject=' + encodeURIComponent(`[${SITE.title}] Sent From ${SITE.title} Website`)
     link += '&body=' + encodeURIComponent(`Dear ${SITE.title} Team,\n\n...\n\nKind Regards,\n`)
 
     // console.debug("link ", link)
