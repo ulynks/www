@@ -27,7 +27,9 @@
                 class="bi bi-person-fill"></i></a>
             <a class="btn btn-primary me-2" href="{{ .Params.linkedin }}" role="button"><i
                 class="bi bi-linkedin"></i></a>
+            {{ if .Params.github }}
             <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
+            {{ end }}
           </div>
         </div>
       </div>
