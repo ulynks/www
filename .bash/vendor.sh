@@ -19,6 +19,7 @@ _ulynks_::cp_vendor() {
     "jquery/dist/jquery.min.js"
     "bootstrap/dist/js/bootstrap.bundle.min.js"
     "dompurify/dist/purify.min.js"
+    "coi-serviceworker/coi-serviceworker.min.js"
   )
   cat <<EOF
 
