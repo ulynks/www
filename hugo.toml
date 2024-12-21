@@ -19,7 +19,7 @@ pluralizeListTitles = false
       connect-src 'self' https://eu.umami.is https://api-gateway.umami.dev;
       font-src 'self' https://fonts.gstatic.com;
       img-src 'self' https://*;
-      script-src 'self' https://* https://eu.umami.is;
+      script-src 'self' https://eu.umami.is;
       style-src 'self' https://fonts.googleapis.com
       """
       Referrer-Policy = 'strict-origin-when-cross-origin'
