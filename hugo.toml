@@ -11,21 +11,21 @@ pluralizeListTitles = false
 # - https://content-security-policy.com
 
 [server]
-[[server.headers]]
-  for = '/**'
-  [server.headers.values]
-    Content-Security-Policy = """
-    default-src 'self';
-    connect-src 'self' https://eu.umami.is https://api-gateway.umami.dev;
-    font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' https://*;
-    script-src 'self' https://eu.umami.is;
-    style-src 'self' https://fonts.googleapis.com
-    """
-    Referrer-Policy = 'strict-origin-when-cross-origin'
-    X-Content-Type-Options = 'nosniff'
-    X-Frame-Options = 'DENY'
-    X-XSS-Protection = '1; mode=block'
+  [[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = """
+      default-src 'self';
+      connect-src 'self' https://eu.umami.is https://api-gateway.umami.dev;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' https://*;
+      script-src 'self' https://eu.umami.is;
+      style-src 'self' https://fonts.googleapis.com
+      """
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-XSS-Protection = '1; mode=block'
 
 [params]
   subtitle = 'Growing on Fyn, Denmark 🇩🇰'
