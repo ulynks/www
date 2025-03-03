@@ -15,7 +15,7 @@ Growing on Fyn, Denmark 🇩🇰
 How to create new pages under the `team` section 👇
 
 ```bash
-for _who in "alexander-dernild" "dusan-misevic" "lionel-jouvet" "julien-vieillefont"; do
+for _who in "alexander-dernild" "dusan-misevic" "julien-vieillefont" "lionel-jouvet"  "luisa-zeppelin" "maeva-vignes" "na-liu"; do
   hugo new content "team/${_who}.md"
 done
 ```
