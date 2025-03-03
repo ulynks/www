@@ -5,7 +5,7 @@ draft: false
 description: "Julien Vieillefont"
 image: "/team/julien-vieillefont.jpg"
 github: "https://github.com/JV-conseil"
-linkedin: "https://www.linkedin.com/in/vieillefont"
+linkedin: "https://www.linkedin.com/in/julien-vieillefont"
 tags: ["Co-Founders", "Full Stack Developper", "Web App Architect", "DevOps"]
 ---
 
