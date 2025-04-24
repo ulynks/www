@@ -4,7 +4,7 @@ date: 2024-06-15T14:10:00+02:00
 description: Wavelinks
 draft: false
 image: /portfolio/dark/wavelinks-square-with-text.svg
-link: https://www.wavelinks.eu
+link: https://wavelinks.eu
 tags: ["Web Apps"]
 ---
 
