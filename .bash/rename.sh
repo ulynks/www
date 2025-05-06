@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
-# -*- coding: UTF-8 -*-
 #
-# author        : JV-conseil
-# credits       : JV-conseil
-# copyright     : Copyright (c) 2019-2024 JV-conseil
-#                 All rights reserved
-#====================================================
+# Script Name : rename.sh
+# Description : ...
+# Created     : May 06, 2025
+# Author      : JV-conseil
+# Contact     : contact@jv-conseil.dev
+# Website     : https://www.jv-conseil.dev
+# Copyright   : (c) 2025 JV-conseil
+#               All rights reserved
+# ========================================================
+
 set -Eeou pipefail
 shopt -s failglob
 
