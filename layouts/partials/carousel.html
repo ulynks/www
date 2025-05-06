@@ -16,9 +16,16 @@
     {{/* reverse so that the most recent event appears first  */}}
     {{ range $i, $pages := where .Site.RegularPages.Reverse "Section" "expertise" }}
 
+    {{ $href := .RelPermalink }}
     {{ $icon := .RelPermalink }}
     {{ $icon = replace $icon "expertise" "carousel" }}
     {{ $icon = trim $icon "/" }}
+
+    {{ if in .LinkTitle "Apps" }}
+    {{ $href = "#" }}
+    {{ else if in .LinkTitle "Data" }}
+    {{ $href = "#" }}
+    {{ end }}
 
     <div class="carousel-item{{ if eq $i 0 }} active{{ end }}">
       <img src="/{{ $icon }}.svg" class="d-block w-100 img-vertical-center" alt="{{ .LinkTitle }}">
@@ -27,7 +34,7 @@
           <div class="container">
             <h1>{{ .LinkTitle }}</h1>
             <p class="opacity-75">{{ .Description | safeHTML | truncate 150 }}</p>
-            <p><a class="btn btn-lg btn-primary" href="{{ .RelPermalink }}">Read more</a></p>
+            <p><a class="btn btn-lg btn-primary" href="{{ $href }}">Read more</a></p>
           </div>
         </div>
       </div>
