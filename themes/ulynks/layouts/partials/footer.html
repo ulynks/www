@@ -62,4 +62,8 @@
       </div>
     </div>
   </div>
+
+  {{ if site.Params.debug }}
+  {{ partial "template-call-stack.html" . }}
+  {{ end }}
 </footer>
