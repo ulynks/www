@@ -14,4 +14,8 @@
 
   </div>
 </main>
+
+{{ if site.Params.debug }}
+{{ partial "template-open-in-vs-code.html" . }}
+{{ end }}
 {{ end }}
