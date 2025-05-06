@@ -9,4 +9,5 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
-    target-branch: ["bootstrap", "dev", "@primer-css"]
+    # target-branch: ["bootstrap", "dev", "@primer-css"]
+    target-branch: ["bootstrap"]
