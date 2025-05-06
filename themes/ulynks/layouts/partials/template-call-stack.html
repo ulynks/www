@@ -1,0 +1,10 @@
+{{ with templates.Current }}
+<div class="debug">
+    {{ range .Ancestors }}
+    <a href="vscode://file/{{ .Filename }}">{{ .Filename }}</a><br>
+    {{ with .Base }}
+    <a href="vscode://file/{{ .Filename }}">{{ .Filename }}</a><br>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}
