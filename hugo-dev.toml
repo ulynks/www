@@ -28,6 +28,7 @@ pluralizeListTitles = false
       X-XSS-Protection = '1; mode=block'
 
 [params]
+  debug = true
   subtitle = 'Growing on Fyn, Denmark 🇩🇰'
   image = '/logo/ulynks-logo-color.png'
   umami = '3cf42fbf-5ff7-4ba7-b4d1-607641c5b4e8'

@@ -52,7 +52,7 @@
     "dev:webpack": "webpack --mode=development --watch",
     "sass": "sass --load-path=node_modules/ --no-source-map themes/ulynks/assets/scss/app.scss themes/ulynks/assets/css/app.css --style=compressed",
     "start": "run-p 'start:*'",
-    "start:hugo": "hugo version && hugo server --gc --minify",
+    "start:hugo": "hugo version && hugo server --config=hugo-dev --logLevel=debug --ignoreCache=true --gc --minify",
     "start:webpack": "webpack --mode=production",
     "start:firefox": "open -na /Applications/Firefox.app --args '--private-window' 'http://localhost:1313/'",
     "test": "echo \"Error: no test specified\" && exit 1",
