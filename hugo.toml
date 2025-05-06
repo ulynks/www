@@ -73,16 +73,6 @@ name = 'Portfolio'
 pageRef = '/portfolio'
 weight = 3
 
-[[menus.main]]
-name = 'Events'
-pageRef = '/events'
-weight = 4
-
-[[menus.main]]
-name = 'Blog'
-pageRef = '/blog'
-weight = 5
-
 [module]
   [module.hugoVersion]
     extended = false
