@@ -30,6 +30,9 @@
             {{ if .Params.github }}
             <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
             {{ end }}
+            {{ if .Params.www }}
+            <a class="btn btn-primary me-2" href="{{ .Params.www }}" role="button"><i class="bi bi-globe2"></i></a>
+            {{ end }}
           </div>
         </div>
       </div>

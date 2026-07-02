@@ -17,6 +17,9 @@
         <p>
           <a class="btn btn-primary me-2" href="{{ .Params.linkedin }}" role="button"><i class="bi bi-linkedin"></i></a>
           <a class="btn btn-primary me-2" href="{{ .Params.github }}" role="button"><i class="bi bi-github"></i></a>
+          {{ if .Params.www }}
+          <a class="btn btn-primary me-2" href="{{ .Params.www }}" role="button"><i class="bi bi-globe2"></i></a>
+          {{ end }}
         </p>
       </div>
       <div class="col-sm-4 py-3">
