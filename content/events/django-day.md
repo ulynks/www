@@ -2,7 +2,7 @@
 title: Django Day
 date: 2023-10-06T00:00:00+01:00
 description: Django Day Copenhagen
-draft: false
+draft: true
 tags: ["django", "python"]
 dateEvent: 2023-10-06T00:00:00+01:00
 location: Copenhagen, Denmark
