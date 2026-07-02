@@ -33,7 +33,7 @@ jobs:
     env:
       # Latest Hugo Release
       # https://github.com/gohugoio/hugo/releases
-      HUGO_VERSION: 0.147.2
+      HUGO_VERSION: 0.163.3
     steps:
       - name: Install Hugo CLI
         run: |
