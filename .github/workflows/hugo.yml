@@ -34,6 +34,9 @@ jobs:
       # Latest Hugo Release
       # https://github.com/gohugoio/hugo/releases
       HUGO_VERSION: 0.163.3
+      # test Node24 ahead of time, set FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true as an env in your workflow
+      # see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Install Hugo CLI
         run: |
