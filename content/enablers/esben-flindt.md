@@ -2,7 +2,7 @@
 title: Esben N. Flindt
 date: 2024-07-12T16:00:00+02:00
 description: Esben N. Flindt
-draft: false
+draft: true
 image: /team/esben-flindt.jpg
 github:
 linkedin: https://www.linkedin.com/in/esben-n-flindt-2a8812/

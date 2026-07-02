@@ -1,7 +1,7 @@
 ---
 title: "Free SVG Cropping Tool"
 date: 2024-03-14T23:32:43+01:00
-draft: false
+draft: true
 description: "Test 1"
 image: "/img/test-1.jpg"
 tags: ["blog", "tool"]

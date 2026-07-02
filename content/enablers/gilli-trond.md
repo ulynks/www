@@ -2,7 +2,7 @@
 title: Gilli Trond
 date: 2024-07-12T16:00:00+02:00
 description: Gilli Trond
-draft: false
+draft: true
 image: /team/gilli-trond.jpg
 github:
 linkedin: https://www.linkedin.com/in/gilli-trond/
